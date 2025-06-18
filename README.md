@@ -1,8 +1,3 @@
-# Vite React Boilerplate
-
-![](/public/vite-react-boilerplate.png)
-
-Everything you need to kick off your next Vite + React web app!
 
 ## Table of Contents
 
@@ -17,7 +12,7 @@ Everything you need to kick off your next Vite + React web app!
 
 ## Overview
 
-Built with type safety, scalability, and developer experience in mind. A batteries included Vite + React template.
+Built with type safety, scalability, and developer experience in mind.
 
 - [pnpm](https://pnpm.io) - A strict and efficient alternative to npm with up to 3x faster performance
 - [TypeScript](https://www.typescriptlang.org) - A typed superset of JavaScript designed with large scale applications in mind
@@ -58,19 +53,13 @@ If you'd like to use the included Dockerfile then [Docker](https://www.docker.co
 Getting started is a simple as cloning the repository
 
 ```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git
+git clone https://github.com/codewithjuspher/loan-app.git
 ```
 
 Changing into the new directory
 
 ```
-cd vite-react-boilerplate
-```
-
-Removing the .git folder (and any additional files, folders or dependencies you may not need)
-
-```
-rm -rf .git
+cd loan-app
 ```
 
 Installing dependencies
@@ -82,18 +71,6 @@ pnpm install
 And running the setup script (initializes git repository and husky and installs playwright)
 
 ```
-pnpm run setup
-```
-
-Congrats! You're ready to starting working on that new project!
-
-If you'd rather run the commands above in one go, check out the command below:
-
-```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git &&\
-cd vite-react-boilerplate &&\
-rm -rf .git &&\
-pnpm install &&\
 pnpm run setup
 ```
 
