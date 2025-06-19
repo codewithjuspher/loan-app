@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "home": "Bahay",
+        "about": "Tungkol sa Amin",
+        "contact": "Makipag-ugnayan sa Amin",
+        "menu": "Pag-navigate"
+    },
+    "actions": {
+        "login": "Mag-log in",
+        "logout": "Mag-logout",
+        "language": "Wika",
+        "theme": {
+            "light": "Liwanag",
+            "dark": "Madilim"
+        }
+    },
+    "theme": {
+        "auto": "Awtomatik na Tema",
+        "manual": "Manwal na Tema"
+    }
+}

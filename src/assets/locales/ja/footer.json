@@ -1,0 +1,11 @@
+{
+    "footer": {
+        "about_us": "私たちについて",
+        "contact": "お問い合わせ",
+        "privacy_policy": "プライバシーポリシー",
+        "terms_of_service": "利用規約",
+        "follow_us": "フォローする",
+        "copyright": "© {{year}} {{name}}",
+        "rights": "全著作権所有。"
+    }
+}

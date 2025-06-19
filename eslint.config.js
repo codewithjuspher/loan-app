@@ -1,3 +1,4 @@
+require('@rushstack/eslint-patch/modern-module-resolution')
 import { fixupPluginRules } from '@eslint/compat';
 import eslintJS from "@eslint/js"
 import tsParser from '@typescript-eslint/parser';

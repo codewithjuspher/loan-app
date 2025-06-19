@@ -1,0 +1,111 @@
+{
+    "hero": {
+        "title": "Sumali sa Sinking Fund at Siguraduhin ang Iyong Kinabukasan",
+        "subtitle": "Mag-ambag, mag-manage, at palaguin ang ipon ng inyong komunidad - lahat sa isang app.",
+        "cta": "Magsimula",
+        "cryptoNote": "Ngayon may paparating na suporta para sa mga transaksyong gamit ang cryptocurrency, kabilang ang Bitcoin, Ethereum, Binance, at Solana."
+    },
+    "how": {
+        "title": "Paano Ito Gumagana",
+        "description": "Alamin kung paano sumali at makinabang sa iyong group sinking fund.",
+        "steps": [
+            {
+                "title": "Sumali sa Pondo",
+                "description": "Magrehistro at maging bahagi ng pinagkakatiwalaang grupo."
+            },
+            {
+                "title": "Magbigay Buwan-buwan",
+                "description": "Mag-ambag ng nakatakdang halaga kada buwan sa pondo."
+            },
+            {
+                "title": "Subaybayan at Kumita",
+                "description": "Tingnan ang iyong kontribusyon at progreso anumang oras."
+            },
+            {
+                "title": "Taunang Bawi na May Kita",
+                "description": "Sa katapusan ng taon, makukuha mo ang iyong naiambag kasama ng interes o kita ng grupo."
+            }
+        ]
+    },
+    "features": {
+        "title": "Pangunahing Tampok Para sa Iyong Pagsulong",
+        "description": "Mga kasangkapan para sa pagiging bukas at paglago ng pananalapi.",
+        "record": "Irehistro ang Transaksyon",
+        "record_desc": "Madaling subaybayan ang bawat ambag, pag-withdraw, o gastos.",
+        "contribute": "Mag-ambag Regularly",
+        "contribute_desc": "I-automate o pamahalaan ang iyong mga ambag para sa sama-samang pag-unlad.",
+        "invite": "Pautang at Imbitasyon",
+        "invite_desc": "Gamitin ang loan features at imbitahin ang mga pinagkakatiwalaang kaibigan.",
+        "ai": "Suporta sa Artipisyal na Intelligence",
+        "ai_desc": "Makakuha ng matalinong tulong para sa kalkulasyon, diskarte sa pag-iipon, at automation-lahat gamit ang AI.",
+        "goal_tracking": "Pagsubaybay sa Layunin",
+        "goal_tracking_desc": "Magtakda ng mga target sa pag-iipon at subaybayan ang iyong progreso sa bawat pondo.",
+        "group_management": "Pangasiwa ng Grupo",
+        "group_management_desc": "Lumikha ng mga shared fund, magtalaga ng papel, at pamahalaan ang ambagan bilang isang grupo.",
+        "crypto_support": "Suporta sa Cryptocurrency",
+        "crypto_support_desc": "Gamitin ang mga kilalang cryptocurrency gaya ng Bitcoin, Ethereum, Binance, at Solana para sa ligtas at makabagong transaksyon."
+    },
+    "contribution_tracker": {
+        "title": "Subaybayan ang mga Ambag sa Paglipas ng Panahon",
+        "description": "Panatilihing nasusubaybayan ang progreso ng grupo at ang iyong mga ambag.",
+        "month": "Buwan",
+        "amount": "Halaga"
+    },
+    "loan_request": {
+        "title": "Kailangan ng Tulong? Mag-request ng Loan",
+        "description": "Ang aming proseso ng loan request ay simple, malinaw, at mabilis.",
+        "steps": {
+            "request": "Mag-request ng Loan",
+            "request_desc": "Madaling mag-submit ng loan request mula sa iyong fund dashboard.",
+            "approval": "Proseso ng Pag-apruba",
+            "approval_desc": "Ang mga request ay sinusuri batay sa panuntunan ng grupo at balanse.",
+            "receive": "Agarang Pagkakuha ng Pondo",
+            "receive_desc": "Kapag naaprubahan, agad na ililipat ang pondo sa iyong account."
+        }
+    },
+    "invite": {
+        "title": "Mag-imbita at Manalo",
+        "description": "Palakihin ang iyong komunidad at kumita ng gantimpala sa pag-anyaya sa iba na sumali sa sinking fund.",
+        "invite_friends": "Mag-imbita ng Kaibigan",
+        "invite_desc": "Magpadala ng imbitasyon sa mga taong pinagkakatiwalaan mo at bumuo ng group fund nang magkakasama.",
+        "earn_rewards": "Kumita ng Gantimpala",
+        "rewards_desc": "Kumuha ng bonus o puntos sa bawat matagumpay na imbitasyon na sumali sa pondo.",
+        "leaderboard": "Umakyat sa Leaderboard",
+        "leaderboard_desc": "Ang mga nangungunang nag-imbita ay may tsansang manalo ng eksklusibong premyo bawat buwan."
+    },
+    "cta": {
+        "title": "Handa ka na bang magsimula ng iyong pondo?",
+        "description": "Sumali sa iba pang mas mabilis at mas matalinong nakakaabot ng kanilang mga layunin sa pagtitipid.",
+        "button": "Gumawa ng Iyong Pondo"
+    },
+    "faq": {
+        "title": "Mga Madalas Itanong",
+        "description": "Mabilisang sagot sa mga karaniwang tanong tungkol sa iyong sinking fund.",
+        "q1": "Paano gumagana ang sinking fund?",
+        "a1": "Ang bawat miyembro ay nag-aambag nang regular sa isang pinagsama-samang pondo. Maaaring gamitin ang pondo para sa mga pautang o kolektibong layunin, na may malinaw na pagsubaybay at patas na mga patakaran.",
+        "q2": "Maaari ba akong humiling ng pautang mula sa group fund?",
+        "a2": "Oo. Maaari kang humiling ng pautang base sa iyong kasaysayan ng kontribusyon. Maaaring kailanganin ang pag-apruba ng grupo o sundin ang awtomatikong limitasyon.",
+        "q3": "Ligtas ba ang aking kontribusyon?",
+        "a3": "Ang iyong mga kontribusyon ay maayos na naitatala. Ang mga tagapangasiwa ng pondo o smart contracts ang namamahala ng pondo nang patas at ligtas.",
+        "q4": "Makakatulong ba ang AI sa pagpaplano ng aking ipon?",
+        "a4": "Oo! Maaaring imungkahi ng aming AI kung magkano ang dapat mong iambag, magpaalala ng mga petsa ng bayad, at magsagawa ng simulation ng paglago ng iyong pondo.",
+        "q5": "Maaari ba akong magtakda ng layunin para sa bawat pondo?",
+        "a5": "Oo naman. Maaari kang magtakda ng target na halaga, deadline, at makita ang iyong progreso sa real-time.",
+        "q6": "Paano ko mawi-withdraw ang aking ipon?",
+        "a6": "Ang pagwi-withdraw ay batay sa iyong bahagi o uri ng kahilingan. Maaaring kailanganin ng ilang request ang pag-apruba ng admin o paghihintay ng maturity ng pondo."
+    },
+    "footer_cta": {
+        "title": "Handa ka na bang magsimula ng iyong sinking fund?",
+        "button": "Simulan Na"
+    },
+    "testimonials": {
+        "title": "Sabi ng Aming mga Gumagamit",
+        "subtitle": "Tunay na feedback mula sa mga user na abot-kamay na ang kanilang mga layunin sa pananalapi.",
+        "alice": "Sa tulong ng app na ito, madali akong nakapag-ipon para sa aming bahay!",
+        "bob": "Mahusay na kasangkapan para pamahalaan ang mga layunin sa pananalapi at subaybayan ang progreso.",
+        "cynthia": "Napaka-intuwitibo ng interface at ang mga paalala ay tumutulong para manatiling nasa tamang landas."
+    },
+    "parallax": {
+        "title": "Maranasan ang Kalinawan sa Pananalapi"
+    }
+}

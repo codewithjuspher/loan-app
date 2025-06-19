@@ -5,24 +5,30 @@ import App from "./App.tsx";
 import { routeTree } from "./routeTree.gen.ts";
 import "./styles/tailwind.css";
 import './common/i18n'
+import { enableMocks } from "./mocks/enableMocks.ts";
 
 const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
 	interface Register {
-		// This infers the type of our router and registers it across your entire project
 		router: typeof router;
 	}
 }
 
-const rootElement = document.querySelector("#root") as Element;
-if (!rootElement.innerHTML) {
-	const root = ReactDOM.createRoot(rootElement);
-	root.render(
-		<React.StrictMode>
-			<React.Suspense fallback="loading">
-				<App router={router} />
-			</React.Suspense>
-		</React.StrictMode>
-	);
+if (import.meta.env.DEV) {
+	await enableMocks();
 }
+
+const rootElement = document.querySelector("#root") as Element;
+enableMocks().then(() => {
+	if (!rootElement.innerHTML) {
+		const root = ReactDOM.createRoot(rootElement);
+		root.render(
+			<React.StrictMode>
+				<React.Suspense fallback="loading">
+					<App router={router} />
+				</React.Suspense>
+			</React.StrictMode>
+		);
+	}
+});

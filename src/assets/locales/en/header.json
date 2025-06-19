@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "menu": "Navigation"
+    },
+    "actions": {
+        "login": "Login",
+        "logout": "Logout",
+        "language": "Language",
+        "theme": {
+            "light": "Light",
+            "dark": "Dark"
+        }
+    },
+    "theme": {
+        "auto": "Auto Theme",
+        "manual": "Manual Theme"
+    }
+}

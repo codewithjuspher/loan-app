@@ -1,0 +1,34 @@
+{
+    "contact": {
+        "title": "Contáctanos",
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono (Opcional)",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "submit": "Enviar Mensaje",
+        "success": "¡Gracias! Nos pondremos en contacto contigo pronto.",
+        "placeholder": {
+            "name": "Tu nombre completo",
+            "email": "tucorreo@ejemplo.com",
+            "phone": "09xx xxx xxxx",
+            "subject": "Elige un asunto",
+            "message": "Escribe tu mensaje aquí..."
+        },
+        "subjects": {
+            "support": "Soporte",
+            "feedback": "Comentarios",
+            "feature": "Solicitud de Función",
+            "other": "Otro"
+        },
+        "errors": {
+            "name_required": "El nombre es obligatorio",
+            "email_required": "El correo electrónico es obligatorio",
+            "email_invalid": "Correo electrónico inválido",
+            "subject_required": "El asunto es obligatorio",
+            "message_required": "El mensaje es obligatorio",
+            "message_min": "El mensaje debe tener al menos 10 caracteres",
+            "spam_detected": "Se ha detectado spam"
+        }
+    }
+}

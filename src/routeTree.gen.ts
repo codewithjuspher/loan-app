@@ -11,12 +11,66 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as HomeImport } from './routes/home'
+import { Route as ContactImport } from './routes/contact'
+import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
+import { Route as UserDashboardImport } from './routes/user/dashboard'
+import { Route as FundOnboardingImport } from './routes/fund/onboarding'
+import { Route as AuthRegisterImport } from './routes/auth/register'
+import { Route as AuthLoginImport } from './routes/auth/login'
+import { Route as AuthForgotPasswordImport } from './routes/auth/forgot-password'
+import { Route as AdminDashboardImport } from './routes/admin/dashboard'
 
 // Create/Update Routes
 
+const HomeRoute = HomeImport.update({
+  path: '/home',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ContactRoute = ContactImport.update({
+  path: '/contact',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AboutRoute = AboutImport.update({
+  path: '/about',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const IndexRoute = IndexImport.update({
   path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const UserDashboardRoute = UserDashboardImport.update({
+  path: '/user/dashboard',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const FundOnboardingRoute = FundOnboardingImport.update({
+  path: '/fund/onboarding',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AuthRegisterRoute = AuthRegisterImport.update({
+  path: '/auth/register',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AuthLoginRoute = AuthLoginImport.update({
+  path: '/auth/login',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AuthForgotPasswordRoute = AuthForgotPasswordImport.update({
+  path: '/auth/forgot-password',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AdminDashboardRoute = AdminDashboardImport.update({
+  path: '/admin/dashboard',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -31,12 +85,86 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutImport
+      parentRoute: typeof rootRoute
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactImport
+      parentRoute: typeof rootRoute
+    }
+    '/home': {
+      id: '/home'
+      path: '/home'
+      fullPath: '/home'
+      preLoaderRoute: typeof HomeImport
+      parentRoute: typeof rootRoute
+    }
+    '/admin/dashboard': {
+      id: '/admin/dashboard'
+      path: '/admin/dashboard'
+      fullPath: '/admin/dashboard'
+      preLoaderRoute: typeof AdminDashboardImport
+      parentRoute: typeof rootRoute
+    }
+    '/auth/forgot-password': {
+      id: '/auth/forgot-password'
+      path: '/auth/forgot-password'
+      fullPath: '/auth/forgot-password'
+      preLoaderRoute: typeof AuthForgotPasswordImport
+      parentRoute: typeof rootRoute
+    }
+    '/auth/login': {
+      id: '/auth/login'
+      path: '/auth/login'
+      fullPath: '/auth/login'
+      preLoaderRoute: typeof AuthLoginImport
+      parentRoute: typeof rootRoute
+    }
+    '/auth/register': {
+      id: '/auth/register'
+      path: '/auth/register'
+      fullPath: '/auth/register'
+      preLoaderRoute: typeof AuthRegisterImport
+      parentRoute: typeof rootRoute
+    }
+    '/fund/onboarding': {
+      id: '/fund/onboarding'
+      path: '/fund/onboarding'
+      fullPath: '/fund/onboarding'
+      preLoaderRoute: typeof FundOnboardingImport
+      parentRoute: typeof rootRoute
+    }
+    '/user/dashboard': {
+      id: '/user/dashboard'
+      path: '/user/dashboard'
+      fullPath: '/user/dashboard'
+      preLoaderRoute: typeof UserDashboardImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren({ IndexRoute })
+export const routeTree = rootRoute.addChildren({
+  IndexRoute,
+  AboutRoute,
+  ContactRoute,
+  HomeRoute,
+  AdminDashboardRoute,
+  AuthForgotPasswordRoute,
+  AuthLoginRoute,
+  AuthRegisterRoute,
+  FundOnboardingRoute,
+  UserDashboardRoute,
+})
 
 /* prettier-ignore-end */
 
@@ -46,11 +174,47 @@ export const routeTree = rootRoute.addChildren({ IndexRoute })
     "__root__": {
       "filePath": "__root.ts",
       "children": [
-        "/"
+        "/",
+        "/about",
+        "/contact",
+        "/home",
+        "/admin/dashboard",
+        "/auth/forgot-password",
+        "/auth/login",
+        "/auth/register",
+        "/fund/onboarding",
+        "/user/dashboard"
       ]
     },
     "/": {
       "filePath": "index.ts"
+    },
+    "/about": {
+      "filePath": "about.ts"
+    },
+    "/contact": {
+      "filePath": "contact.ts"
+    },
+    "/home": {
+      "filePath": "home.ts"
+    },
+    "/admin/dashboard": {
+      "filePath": "admin/dashboard.ts"
+    },
+    "/auth/forgot-password": {
+      "filePath": "auth/forgot-password.ts"
+    },
+    "/auth/login": {
+      "filePath": "auth/login.ts"
+    },
+    "/auth/register": {
+      "filePath": "auth/register.ts"
+    },
+    "/fund/onboarding": {
+      "filePath": "fund/onboarding.ts"
+    },
+    "/user/dashboard": {
+      "filePath": "user/dashboard.ts"
     }
   }
 }

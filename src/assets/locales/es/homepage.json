@@ -1,0 +1,111 @@
+{
+    "hero": {
+        "title": "Únete a un Fondo de Ahorro y Asegura tu Futuro",
+        "subtitle": "Contribuye, gestiona y haz crecer tus ahorros comunitarios, todo en un solo lugar.",
+        "cta": "Comenzar",
+        "cryptoNote": "Ahora con soporte próximo para transacciones con criptomonedas, incluyendo Bitcoin, Ethereum, Binance y Solana."
+    },
+    "how": {
+        "title": "Cómo Funciona",
+        "description": "Entiende el proceso para unirte y beneficiarte de tu fondo de ahorro grupal.",
+        "steps": [
+            {
+                "title": "Únete a un Fondo",
+                "description": "Regístrate y forma parte de un grupo de confianza."
+            },
+            {
+                "title": "Contribuye Mensualmente",
+                "description": "Aporta una cantidad fija al fondo compartido cada mes."
+            },
+            {
+                "title": "Monitorea y Gana",
+                "description": "Sigue tu saldo y participación con actualizaciones en tiempo real."
+            },
+            {
+                "title": "Pago Anual con Intereses",
+                "description": "Al final del ciclo, recibe tus aportaciones con intereses por crecimiento del fondo o rendimientos compartidos."
+            }
+        ]
+    },
+    "features": {
+        "title": "Funciones Clave para Impulsar tu Crecimiento",
+        "description": "Herramientas diseñadas para promover la transparencia y el crecimiento financiero.",
+        "record": "Registrar Transacciones",
+        "record_desc": "Haz seguimiento fácilmente de cada aporte, retiro o gasto.",
+        "contribute": "Contribuye Regularmente",
+        "contribute_desc": "Automatiza o gestiona tus contribuciones para crecer juntos.",
+        "invite": "Préstamos e Invitaciones",
+        "invite_desc": "Accede a funciones de préstamo e invita a amigos de confianza.",
+        "ai": "Soporte con IA",
+        "ai_desc": "Obtén ayuda inteligente para cálculos, estrategias de ahorro y automatización — todo impulsado por IA.",
+        "goal_tracking": "Seguimiento de Metas",
+        "goal_tracking_desc": "Establece metas de ahorro por fondo y sigue tu progreso con el tiempo.",
+        "group_management": "Gestión de Grupos",
+        "group_management_desc": "Crea fondos compartidos, asigna roles y gestiona aportes juntos.",
+        "crypto_support": "Soporte de Criptomonedas",
+        "crypto_support_desc": "Usa criptomonedas populares como Bitcoin, Ethereum, Binance y Solana para transacciones seguras y modernas."
+    },
+    "contribution_tracker": {
+        "title": "Sigue tus Aportes en el Tiempo",
+        "description": "Mantente al tanto del progreso del grupo y tus aportes personales.",
+        "month": "Mes",
+        "amount": "Monto"
+    },
+    "loan_request": {
+        "title": "¿Necesitas Ayuda Extra? Solicita un Préstamo",
+        "description": "Nuestro proceso integrado de solicitud de préstamos es simple, transparente y rápido.",
+        "steps": {
+            "request": "Solicita un Préstamo",
+            "request_desc": "Envía fácilmente una solicitud desde el panel de tu fondo.",
+            "approval": "Proceso de Aprobación",
+            "approval_desc": "Las solicitudes se revisan según las reglas del grupo y el saldo disponible.",
+            "receive": "Recibe Fondos al Instante",
+            "receive_desc": "Una vez aprobado, el dinero se transfiere rápidamente a tu cuenta."
+        }
+    },
+    "invite": {
+        "title": "Invita y Gana",
+        "description": "Haz crecer tu comunidad y gana recompensas por invitar a otros a unirse a tu fondo.",
+        "invite_friends": "Invitar Amigos",
+        "invite_desc": "Envía invitaciones a personas de confianza y construyan juntos su fondo.",
+        "earn_rewards": "Gana Recompensas",
+        "rewards_desc": "Obtén bonos o puntos por cada invitado que se una a un fondo.",
+        "leaderboard": "Sube en el Ranking",
+        "leaderboard_desc": "Los principales invitadores tienen la oportunidad de ganar premios exclusivos cada mes."
+    },
+    "cta": {
+        "title": "¿Listo para Iniciar tu Fondo?",
+        "description": "Únete a otros que alcanzan sus metas de ahorro — más rápido e inteligentemente.",
+        "button": "Crear mi Fondo"
+    },
+    "faq": {
+        "title": "Preguntas Frecuentes",
+        "description": "Respuestas rápidas a preguntas comunes sobre tu fondo de ahorro.",
+        "q1": "¿Cómo funciona un fondo de ahorro?",
+        "a1": "Cada miembro aporta regularmente a un fondo compartido. Los fondos se pueden usar para préstamos o metas comunes, con seguimiento transparente y reglas justas.",
+        "q2": "¿Puedo solicitar un préstamo del fondo grupal?",
+        "a2": "Sí. Puedes solicitar un préstamo según tu historial de aportes. Pueden aplicar reglas de aprobación del grupo o límites automáticos.",
+        "q3": "¿Está segura mi aportación?",
+        "a3": "Tus aportes se registran de forma transparente. Administradores del fondo o contratos inteligentes gestionan las asignaciones de manera justa y segura.",
+        "q4": "¿La IA puede ayudarme a planificar mis ahorros?",
+        "a4": "¡Sí! Nuestro asistente con IA puede sugerirte cuánto aportar, recordarte fechas de vencimiento e incluso simular el crecimiento de tu fondo.",
+        "q5": "¿Puedo establecer una meta para cada fondo?",
+        "a5": "Por supuesto. Puedes establecer montos objetivos, plazos y visualizar tu progreso con actualizaciones en tiempo real.",
+        "q6": "¿Cómo retiro mis ahorros?",
+        "a6": "Los retiros dependen de tu participación o tipo de solicitud. Algunos pueden requerir aprobación del administrador o maduración del fondo."
+    },
+    "footer_cta": {
+        "title": "¿Listo para iniciar tu fondo de ahorro?",
+        "button": "Comenzar"
+    },
+    "testimonials": {
+        "title": "Lo Que Dicen Nuestros Usuarios",
+        "subtitle": "Opiniones reales de personas alcanzando sus metas financieras.",
+        "alice": "¡Esta app me ayudó a ahorrar para mi casa con facilidad!",
+        "bob": "Gran herramienta para gestionar objetivos financieros y seguir el progreso.",
+        "cynthia": "La interfaz es intuitiva y los recordatorios me mantienen en camino."
+    },
+    "parallax": {
+        "title": "Experimenta Claridad Financiera"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "home": "ホーム",
+        "about": "私たちについて",
+        "contact": "お問い合わせ",
+        "menu": "ナビゲーション"
+    },
+    "actions": {
+        "login": "ログイン",
+        "logout": "ログアウト",
+        "language": "言語",
+        "theme": {
+            "light": "ライト",
+            "dark": "ダーク"
+        }
+    },
+    "theme": {
+        "auto": "自動テーマ",
+        "manual": "手動テーマ"
+    }
+}

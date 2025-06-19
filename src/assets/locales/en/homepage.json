@@ -1,0 +1,111 @@
+{
+    "hero": {
+        "title": "Join a Sinking Fund and Secure Your Future",
+        "subtitle": "Contribute, manage, and grow your community savings - all in one place.",
+        "cta": "Get Started",
+        "cryptoNote": "Now with upcoming support for cryptocurrency transactions, including Bitcoin, Ethereum, Binance, and Solana."
+    },
+    "how": {
+        "title": "How It Works",
+        "description": "Understand the process of joining and benefiting from your group sinking fund.",
+        "steps": [
+            {
+                "title": "Join a Fund",
+                "description": "Sign up and become part of a trusted group."
+            },
+            {
+                "title": "Contribute Monthly",
+                "description": "Add a fixed amount to the shared pool every month."
+            },
+            {
+                "title": "Track and Earn",
+                "description": "Monitor your balance and participation with real-time updates."
+            },
+            {
+                "title": "Annual Payout with Interest",
+                "description": "At the end of the cycle, receive your contributions back with interest from fund growth or shared returns."
+            }
+        ]
+    },
+    "features": {
+        "title": "Core Features to Help You Grow",
+        "description": "Tools designed to build transparency and financial growth.",
+        "record": "Record Transactions",
+        "record_desc": "Easily track every contribution, withdrawal, or expense.",
+        "contribute": "Contribute Regularly",
+        "contribute_desc": "Automate or manage your contributions to grow together.",
+        "invite": "Loan & Invite",
+        "invite_desc": "Access loan features and invite trusted friends.",
+        "ai": "AI Support",
+        "ai_desc": "Get smart assistance for calculations, savings strategies, and automation-all powered by AI.",
+        "goal_tracking": "Goal Tracking",
+        "goal_tracking_desc": "Set savings targets for each fund and monitor your progress over time.",
+        "group_management": "Group Management",
+        "group_management_desc": "Create shared funds, assign roles, and manage contributions together.",
+        "crypto_support": "Cryptocurrency Support",
+        "crypto_support_desc": "Use popular cryptocurrencies like Bitcoin, Ethereum, Binance, and Solana for secure and modern transactions."
+    },
+    "contribution_tracker": {
+        "title": "Track Contributions Over Time",
+        "description": "Stay on top of group progress and your own inputs.",
+        "month": "Month",
+        "amount": "Amount"
+    },
+    "loan_request": {
+        "title": "Need Extra Help? Request a Loan",
+        "description": "Our built-in loan request process is simple, transparent, and quick.",
+        "steps": {
+            "request": "Request a Loan",
+            "request_desc": "Easily submit a loan request directly from your fund dashboard.",
+            "approval": "Approval Workflow",
+            "approval_desc": "Requests are reviewed based on group rules and available balance.",
+            "receive": "Get Funds Instantly",
+            "receive_desc": "Once approved, funds are transferred to your account quickly."
+        }
+    },
+    "invite": {
+        "title": "Invite and Win",
+        "description": "Grow your community and earn rewards for inviting others to join your sinking fund.",
+        "invite_friends": "Invite Friends",
+        "invite_desc": "Send invitations to people you trust and build your group fund together.",
+        "earn_rewards": "Earn Rewards",
+        "rewards_desc": "Get bonuses or points for every successful invite that joins a fund.",
+        "leaderboard": "Climb the Leaderboard",
+        "leaderboard_desc": "Top inviters get a chance to win exclusive prizes each month."
+    },
+    "cta": {
+        "title": "Ready to Start Your Fund?",
+        "description": "Join others reaching their savings goals — faster and smarter.",
+        "button": "Create Your Fund"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Quick answers to common questions about your sinking fund.",
+        "q1": "How does a sinking fund work?",
+        "a1": "Each member contributes regularly to a shared pool. Funds can be used for loans or shared goals, with transparent tracking and fair rules.",
+        "q2": "Can I request a loan from the group fund?",
+        "a2": "Yes. You can request a loan based on your contribution history. Group approval or automated limits may apply.",
+        "q3": "Is my contribution secure?",
+        "a3": "Your contributions are recorded transparently. Fund administrators or smart contracts manage allocations fairly and securely.",
+        "q4": "Can AI help me plan my savings?",
+        "a4": "Yes! Our AI assistant can suggest how much to contribute, remind you of due dates, and even simulate your fund’s growth over time.",
+        "q5": "Can I set a goal for each fund?",
+        "a5": "Absolutely. You can set target amounts, deadlines, and even visualize your progress with real-time updates.",
+        "q6": "How do I withdraw my savings?",
+        "a6": "Withdrawals are based on your share or request type. Some may require admin approval or fund maturity before access."
+    },
+    "footer_cta": {
+        "title": "Ready to start your sinking fund?",
+        "button": "Get Started"
+    },
+    "testimonials": {
+        "title": "What Our Users Say",
+        "subtitle": "Real feedback from users reaching their financial goals.",
+        "alice": "Using this sinking fund app helped me save for my house easily!",
+        "bob": "Great tool for managing financial goals and tracking progress.",
+        "cynthia": "The UI is intuitive and the reminders keep me on track."
+    },
+    "parallax": {
+        "title": "Experience Financial Clarity"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "contact": {
+        "title": "Makipag-ugnayan sa Amin",
+        "name": "Pangalan",
+        "email": "Email",
+        "phone": "Telepono (Opsyonal)",
+        "subject": "Paksa",
+        "message": "Mensahe",
+        "submit": "Ipadala ang Mensahe",
+        "success": "Salamat! Makikipag-ugnayan kami sa lalong madaling panahon.",
+        "placeholder": {
+            "name": "Iyong buong pangalan",
+            "email": "ikaw@example.com",
+            "phone": "09xx xxx xxxx",
+            "subject": "Pumili ng paksa",
+            "message": "Ilagay ang iyong mensahe dito..."
+        },
+        "subjects": {
+            "support": "Suporta",
+            "feedback": "Puna",
+            "feature": "Request ng Tampok",
+            "other": "Iba pa"
+        },
+        "errors": {
+            "name_required": "Kailangan ang pangalan",
+            "email_required": "Kailangan ang email",
+            "email_invalid": "Hindi wastong email address",
+            "subject_required": "Kailangan ang paksa",
+            "message_required": "Kailangan ang mensahe",
+            "message_min": "Ang mensahe ay dapat hindi bababa sa 10 karakter",
+            "spam_detected": "Natukoy na spam"
+        }
+    }
+}

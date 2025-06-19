@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "home": "Inicio",
+        "about": "Sobre Nosotros",
+        "contact": "Contáctanos",
+        "menu": "Navegación"
+    },
+    "actions": {
+        "login": "Iniciar Sesión",
+        "logout": "Cerrar Sesión",
+        "language": "Idioma",
+        "theme": {
+            "light": "Claro",
+            "dark": "Oscuro"
+        }
+    },
+    "theme": {
+        "auto": "Tema Automático",
+        "manual": "Tema Manual"
+    }
+}

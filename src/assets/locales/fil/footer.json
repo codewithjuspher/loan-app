@@ -1,0 +1,11 @@
+{
+    "footer": {
+        "about_us": "Tungkol sa Amin",
+        "contact": "Makipag-ugnayan sa Amin",
+        "privacy_policy": "Patakaran sa Privacy",
+        "terms_of_service": "Mga Tuntunin ng Serbisyo",
+        "follow_us": "Sundan Kami",
+        "copyright": "© {{year}} {{name}}",
+        "rights": "Lahat ng karapatan ay nakalaan."
+    }
+}

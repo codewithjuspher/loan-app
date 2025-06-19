@@ -1,0 +1,38 @@
+{
+    "title": "Acerca de Sinking Fund",
+    "intro": "¡Bienvenido a Sinking Fund! Facilitamos que empleados y cualquier persona creen y se unan a fondos de reserva. Nuestras herramientas te ayudan a seguir fácilmente cada contribución, retiro y gasto—para que siempre sepas en qué estado están tus finanzas.",
+    "features": "Automatiza tus contribuciones o adminístralas manualmente, invita a amigos de confianza para crecer juntos, e incluso accede a funciones de préstamo convenientes. La transparencia y el crecimiento financiero están en el corazón de todo lo que construimos.",
+    "closing": "¡Únete hoy y empieza a construir tu futuro financiero de forma inteligente, sencilla y amigable!",
+    "getStarted": "Comenzar",
+    "funFact": "¿Sabías que los fondos de reserva han sido utilizados por ahorradores inteligentes y empresas durante siglos para prepararse para gastos futuros? — ¡Haz que tu dinero trabaje de manera más inteligente, no más difícil!",
+    "faqItems": [
+        {
+            "question": "¿Qué es un fondo de reserva?",
+            "answer": "Un fondo de reserva es una cuenta de ahorro donde apartas dinero regularmente para un propósito o gasto específico."
+        },
+        {
+            "question": "¿Quién puede unirse a un fondo de reserva?",
+            "answer": "¡Cualquiera! Tanto empleados como no empleados pueden crear o unirse a fondos de reserva para ahorrar en conjunto."
+        }
+    ],
+    "coreValues": "Valores Fundamentales",
+    "coreValuesList": [
+        {
+            "name": "Transparencia",
+            "description": "Seguimiento claro y abierto de cada contribución y retiro."
+        },
+        {
+            "name": "Comunidad",
+            "description": "Invita a amigos de confianza y hagan crecer sus fondos juntos."
+        },
+        {
+            "name": "Crecimiento",
+            "description": "Automatiza tus aportes y accede a funciones de préstamo para construir tu futuro financiero."
+        }
+    ],
+    "missionVision": "Misión y Visión",
+    "mission": "Nuestra misión es empoderar a individuos y empleados para ahorrar de manera más inteligente mediante fondos de reserva simples, transparentes y enfocados en la comunidad.",
+    "vision": "Imaginamos un futuro donde todos tengan control sobre sus metas financieras a través de estrategias de ahorro inteligentes y herramientas confiables.",
+    "teamTitle": "Conoce al Equipo",
+    "showFunFact": "Mostrar un dato curioso"
+}

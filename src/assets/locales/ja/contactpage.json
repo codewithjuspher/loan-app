@@ -1,0 +1,34 @@
+{
+    "contact": {
+        "title": "お問い合わせ",
+        "name": "お名前",
+        "email": "メールアドレス",
+        "phone": "電話番号（任意）",
+        "subject": "件名",
+        "message": "メッセージ",
+        "submit": "メッセージを送信",
+        "success": "ありがとうございます！近日中にご連絡いたします。",
+        "placeholder": {
+            "name": "氏名を入力してください",
+            "email": "you@example.com",
+            "phone": "090x xxx xxxx",
+            "subject": "件名を選択してください",
+            "message": "ここにメッセージをご記入ください..."
+        },
+        "subjects": {
+            "support": "サポート",
+            "feedback": "フィードバック",
+            "feature": "機能リクエスト",
+            "other": "その他"
+        },
+        "errors": {
+            "name_required": "名前は必須です",
+            "email_required": "メールアドレスは必須です",
+            "email_invalid": "無効なメールアドレスです",
+            "subject_required": "件名は必須です",
+            "message_required": "メッセージは必須です",
+            "message_min": "メッセージは10文字以上で入力してください",
+            "spam_detected": "スパムが検出されました"
+        }
+    }
+}

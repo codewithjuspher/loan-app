@@ -1,0 +1,11 @@
+{
+    "footer": {
+        "about_us": "About Us",
+        "contact": "Contact Us",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service",
+        "follow_us": "Follow Us",
+        "copyright": "© {{year}} {{name}}",
+        "rights": "All rights reserved."
+    }
+}

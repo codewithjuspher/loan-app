@@ -1,0 +1,39 @@
+{
+    "title": "Tungkol sa Sinking Fund",
+    "intro": "Maligayang pagdating sa Sinking Fund! Ginagawa naming madali para sa mga empleyado at kahit sino na lumikha at sumali sa sinking funds. Ang aming mga kasangkapan ay tumutulong sa'yo na madaling subaybayan ang bawat kontribusyon, pag-withdraw, at gastusin—para laging alam mo kung nasaan ang iyong pera.",
+    "features": "I-automate ang iyong mga kontribusyon o pamahalaan ito nang manu-mano, mag-imbita ng mga pinagkakatiwalaang kaibigan para sabay-sabay kayong umunlad, at magkaroon ng access sa mga maginhawang loan features. Ang transparency at paglago ng pinansyal ang puso ng lahat ng aming ginagawa.",
+    "closing": "Sumali na ngayon at simulan ang pagtatayo ng iyong pinansyal na kinabukasan sa isang matalino, simple, at palakaibigang paraan!",
+    "getStarted": "Magsimula na",
+    "funFact": "Alam mo ba? Ginamit na ng mga matatalinong nag-iipon at mga negosyo ang sinking funds sa loob ng maraming siglo para paghandaan ang mga gastusin sa hinaharap — para mas mapabisa ang paggamit ng iyong pera!",
+    "faqItems": [
+        {
+            "question": "Ano ang sinking fund?",
+            "answer": "Ang sinking fund ay isang savings account kung saan regular kang nag-iipon para sa isang tiyak na layunin o gastusin."
+        },
+        {
+            "question": "Sino ang pwedeng sumali sa sinking fund?",
+            "answer": "Kahit sino! Puwedeng mga empleyado at hindi empleyado na gumawa o sumali sa sinking funds upang magsama-sama sa pag-iipon."
+        }
+    ],
+    "coreValues": "Mga Pangunahing Halaga",
+    "coreValuesList": [
+        {
+            "name": "Kalinawan",
+            "description": "Malinaw at bukas na pagsubaybay sa bawat kontribusyon at pag-withdraw."
+        },
+        {
+            "name": "Komunidad",
+            "description": "Mag-imbita ng mga pinagkakatiwalaang kaibigan at sabay-sabay kayong umunlad."
+        },
+        {
+            "name": "Paglago",
+            "description": "I-automate ang mga kontribusyon at magkaroon ng access sa mga loan features para palaguin ang iyong pinansyal na kinabukasan."
+        }
+    ],
+    "teamTitle": "Kilalanin ang Koponan",
+    "hideFunFact": "Itago ang isang masayang katotohanan",
+    "showFunFact": "Magpakita ng isang masayang katotohanan",
+    "missionVision": "Misyon at Bisyon",
+    "mission": "Ang aming misyon ay bigyang kapangyarihan ang mga indibidwal at empleyado na mag-ipon nang mas matalino sa pamamagitan ng simpleng, malinaw, at komunidad na nakatuong sinking funds.",
+    "vision": "Nakikita namin ang isang kinabukasan kung saan lahat ay may kontrol sa kanilang mga pinansyal na layunin gamit ang matatalinong estratehiya sa pag-iipon at mapagkakatiwalaang mga kasangkapan."
+}

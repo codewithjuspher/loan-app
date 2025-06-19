@@ -1,0 +1,38 @@
+{
+    "title": "About Sinking Fund",
+    "intro": "Welcome to Sinking Fund! We make it easy for employees and anyone to create and join sinking funds. Our tools help you easily track every contribution, withdrawal, and expense—so you always know where your money stands.",
+    "features": "Automate your contributions or manage them manually, invite trusted friends to grow together, and even access convenient loan features. Transparency and financial growth are at the heart of everything we build.",
+    "closing": "Join us today and start building your financial future the smart, simple, and friendly way!",
+    "getStarted": "Get Started",
+    "funFact": "Did you know? Sinking funds have been used by savvy savers and businesses for centuries to prepare for future expenses — making your money work smarter, not harder!",
+    "faqItems": [
+        {
+            "question": "What is a sinking fund?",
+            "answer": "A sinking fund is a savings account where you set aside money regularly for a specific purpose or expense."
+        },
+        {
+            "question": "Who can join a sinking fund?",
+            "answer": "Anyone! Employees and non-employees alike can create or join sinking funds to save together."
+        }
+    ],
+    "coreValues": "Core Values",
+    "coreValuesList": [
+        {
+            "name": "Transparency",
+            "description": "Clear and open tracking of every contribution and withdrawal."
+        },
+        {
+            "name": "Community",
+            "description": "Invite trusted friends and grow your funds together."
+        },
+        {
+            "name": "Growth",
+            "description": "Automate contributions and access loan features to build your financial future."
+        }
+    ],
+    "missionVision": "Mission & Vision",
+    "mission": "Our mission is to empower individuals and employees to save smarter by providing simple, transparent, and community-driven sinking funds.",
+    "vision": "We envision a future where everyone has control over their financial goals through smart saving strategies and trustworthy tools.",
+    "teamTitle": "Meet the Team",
+    "showFunFact": "Show a fun fact"
+}
