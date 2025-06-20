@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Card, Form, Input, Button, Divider, Typography, Space, theme } from "antd";
+import { Card, Form, Input, Button, Divider, Typography, Space, theme, notification } from "antd";
 import { FacebookFilled, GoogleOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
 import { create } from "zustand";
 import { useTranslation } from "react-i18next";
@@ -57,7 +57,12 @@ export const LoginForm: React.FC = () => {
 
                 window.location.href = "/user/dashboard";
             } else {
-                alert("Invalid credentials");
+                notification.error({
+                    message: t("messages.auth_failed", "Authentication Failed"),
+                    description: t("messages.invalid_credentials", "Invalid username or password"),
+                    duration: 3,
+                    placement: "topRight",
+                });
             }
         } catch (err) {
             console.error("Login failed", err);
@@ -67,11 +72,17 @@ export const LoginForm: React.FC = () => {
     };
 
     const handleSocialLogin = (provider: string) => {
-        console.log(`Logging in with ${provider}`);
+        notification.warning({
+            message: t("messages.coming_soon_title", "Coming Soon"),
+            description: t("messages.social_not_ready", { provider }),
+            duration: 3,
+            placement: "topRight",
+        });
+
     };
 
     return (
-        <div style={{ maxWidth: 480, margin: "4rem auto", padding: "0 1rem" }}>
+        <div className="max-w-[480px] mx-auto my-12 px-4 sm:my-16 sm:px-6">
             <Card
                 variant="borderless"
                 style={{
@@ -141,7 +152,7 @@ export const LoginForm: React.FC = () => {
                         icon={<FacebookFilled />}
                         style={{ backgroundColor: "#1877F2", color: "#fff" }}
                         block
-                        onClick={() => handleSocialLogin("facebook")}
+                        onClick={() => handleSocialLogin("Facebook")}
                     >
                         {t("login.facebook", "Continue with Facebook")}
                     </Button>
@@ -149,7 +160,7 @@ export const LoginForm: React.FC = () => {
                         icon={<GoogleOutlined />}
                         style={{ backgroundColor: "#fff", color: "#000", borderColor: "#ccc" }}
                         block
-                        onClick={() => handleSocialLogin("google")}
+                        onClick={() => handleSocialLogin("Google")}
                     >
                         {t("login.google", "Continue with Google")}
                     </Button>

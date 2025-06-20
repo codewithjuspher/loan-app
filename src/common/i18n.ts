@@ -9,24 +9,28 @@ import AboutEN from "../assets/locales/en/aboutpage.json";
 import ContactEN from "../assets/locales/en/contactpage.json";
 import AuthEN from "../assets/locales/en/auth.json";
 import footerEN from "../assets/locales/en/footer.json";
+import CommonEN from "../assets/locales/en/common.json";
 import AboutFIL from "../assets/locales/fil/aboutpage.json";
 import HomepageFIL from "../assets/locales/fil/homepage.json";
 import headerFIL from "../assets/locales/fil/header.json";
 import ContactFIL from "../assets/locales/fil/contactpage.json";
 import AuthFIL from "../assets/locales/fil/auth.json";
 import footerFIL from "../assets/locales/fil/footer.json";
+import CommonFIL from "../assets/locales/fil/common.json";
 import headerES from "../assets/locales/es/header.json";
 import HomepageES from "../assets/locales/es/homepage.json";
 import AboutES from "../assets/locales/es/aboutpage.json";
 import ContactES from "../assets/locales/es/contactpage.json";
 import AuthES from "../assets/locales/es/auth.json";
 import footerES from "../assets/locales/es/footer.json";
+import CommonES from "../assets/locales/es/common.json";
 import headerJA from "../assets/locales/ja/header.json";
 import HomepageJA from "../assets/locales/ja/homepage.json";
 import AboutJA from "../assets/locales/ja/aboutpage.json";
 import ContactJA from "../assets/locales/ja/contactpage.json";
 import AuthJA from "../assets/locales/ja/auth.json";
 import footerJA from "../assets/locales/ja/footer.json";
+import CommonJA from "../assets/locales/ja/common.json";
 
 export const defaultNS = "header";
 
@@ -38,6 +42,7 @@ export const resources = {
 		contactpage: ContactEN,
 		auth: AuthEN,
 		footer: footerEN,
+		common: CommonEN,
 	},
 	fil: {
 		header: headerFIL,
@@ -46,6 +51,7 @@ export const resources = {
 		contactpage: ContactFIL,
 		auth: AuthFIL,
 		footer: footerFIL,
+		common: CommonFIL,
 	},
 	es: {
 		header: headerES,
@@ -54,6 +60,7 @@ export const resources = {
 		contactpage: ContactES,
 		auth: AuthES,
 		footer: footerES,
+		common: CommonES,
 	},
 	ja: {
 		header: headerJA,
@@ -62,6 +69,7 @@ export const resources = {
 		contactpage: ContactJA,
 		auth: AuthJA,
 		footer: footerJA,
+		common: CommonJA,
 	},
 } as const;
 
@@ -71,7 +79,7 @@ void i18n
 	.init({
 		resources,
 		defaultNS,
-		ns: ["header", "footer", "homepage", "aboutpage", "contactpage", "auth"],
+		ns: ["header", "footer", "homepage", "aboutpage", "contactpage", "auth", "common"],
 		fallbackLng: "en",
 		debug: !isProduction,
 		interpolation: { escapeValue: false },

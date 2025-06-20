@@ -1,11 +1,12 @@
-import React, { useEffect, useRef } from "react"
-import { initInviteAnimations } from "../animations"
-import { Typography, Row, Col, theme } from "antd"
-import { GiftOutlined, UserAddOutlined, StarOutlined } from "@ant-design/icons"
-import { useTranslation } from "react-i18next"
-import { motion, Variants } from "framer-motion"
+import React, { useEffect, useRef } from "react";
+import { initInviteAnimations } from "../animations";
+import { Typography, Row, Col, theme } from "antd";
+import { GiftOutlined, UserAddOutlined, StarOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
+import { motion, Variants } from "framer-motion";
+import { useUIStore } from "../../../stores/uiStore";
 
-const { Title, Paragraph } = Typography
+const { Title, Paragraph } = Typography;
 
 const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -18,18 +19,17 @@ const cardVariants: Variants = {
             ease: "easeOut",
         },
     }),
-}
+};
 
 export const InviteSection: React.FC = () => {
-    const sectionRef = useRef<HTMLDivElement>(null)
-    const { token } = theme.useToken()
-    const { t } = useTranslation("homepage")
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const { token } = theme.useToken();
+    const { t } = useTranslation("homepage");
+    const { darkMode } = useUIStore();
 
     useEffect(() => {
-        initInviteAnimations(sectionRef)
-    }, [])
-
-    const isDark = token.colorBgBase?.includes("#141414") || token.colorBgBase?.includes("rgb(0")
+        initInviteAnimations(sectionRef);
+    }, []);
 
     const cards = [
         {
@@ -56,13 +56,20 @@ export const InviteSection: React.FC = () => {
                 "Top inviters get a chance to win exclusive prizes each month."
             ),
         },
-    ]
+    ];
+
+    const bgClass = darkMode
+        ? "bg-gradient-to-br from-slate-800 to-slate-900"
+        : "bg-gradient-to-br from-blue-50 to-indigo-50";
+
+    const cardBgClass = darkMode
+        ? "bg-gradient-to-br from-slate-800/70 to-slate-700/60 border-white/10 text-white"
+        : "bg-gradient-to-br from-white/80 to-blue-50/80 border-sky-200/40 text-slate-800";
 
     return (
         <section
             ref={sectionRef}
-            className="py-20 px-4 transition-colors duration-700"
-            style={{ backgroundColor: token.colorBgBase }}
+            className={`py-20 px-4 transition-colors duration-700 ${bgClass}`}
         >
             <div className="max-w-5xl mx-auto text-center mb-12">
                 <Title level={2} style={{ color: token.colorText }}>
@@ -87,17 +94,11 @@ export const InviteSection: React.FC = () => {
                             viewport={{ once: true, amount: 0.3 }}
                         >
                             <div
-                                className={`p-6 rounded-2xl text-center transition-all duration-500 backdrop-blur-xl
-                                    border shadow-lg hover:shadow-xl
-                                    ${isDark
-                                        ? "bg-gradient-to-br from-slate-800/70 to-slate-700/60 border-white/10 text-white"
-                                        : "bg-gradient-to-br from-white/80 to-blue-50/80 border-sky-200/40 text-slate-800"
-                                    }
-                                `}
+                                className={`p-6 rounded-2xl text-center transition-all duration-500 backdrop-blur-xl border shadow-lg hover:shadow-xl ${cardBgClass}`}
                             >
                                 <div className="mb-4">{card.icon}</div>
-                                <Title level={4} style={{ color: isDark ? "#fff" : "#1e293b" }}>{card.title}</Title>
-                                <Paragraph style={{ color: isDark ? "#cbd5e1" : "#475569" }}>
+                                <Title level={4} style={{ color: darkMode ? "#fff" : "#1e293b" }}>{card.title}</Title>
+                                <Paragraph style={{ color: darkMode ? "#cbd5e1" : "#475569" }}>
                                     {card.description}
                                 </Paragraph>
                             </div>
@@ -106,5 +107,5 @@ export const InviteSection: React.FC = () => {
                 ))}
             </Row>
         </section>
-    )
-}
+    );
+};

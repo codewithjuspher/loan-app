@@ -1,11 +1,32 @@
 {
-    "footer": {
-        "about_us": "私たちについて",
+    "brand": "FundSink",
+    "description": "伝統的および暗号資産で積立金を賢く管理する方法。",
+    "services": {
+        "title": "サービス",
+        "wallet": "ウォレット",
+        "crypto": "暗号資産",
+        "insurance": "保険",
+        "investment": "投資"
+    },
+    "resources": {
+        "title": "リソース",
+        "helpCenter": "ヘルプセンター",
+        "guides": "ガイド",
+        "community": "コミュニティ",
+        "webinars": "ウェビナー"
+    },
+    "company": {
+        "title": "会社情報",
+        "stories": "ストーリー",
+        "careers": "採用情報",
         "contact": "お問い合わせ",
-        "privacy_policy": "プライバシーポリシー",
-        "terms_of_service": "利用規約",
-        "follow_us": "フォローする",
-        "copyright": "© {{year}} {{name}}",
-        "rights": "全著作権所有。"
-    }
+        "partners": "パートナー"
+    },
+    "rightsReserved": "全著作権所有。",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "cookie": "クッキーポリシー",
+    "appStore": "App Storeでダウンロード",
+    "googlePlay": "Google Playで入手",
+    "appGallery": "App Gallery で詳しく見る"
 }

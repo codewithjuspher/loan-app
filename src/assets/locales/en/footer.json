@@ -1,11 +1,32 @@
 {
-    "footer": {
-        "about_us": "About Us",
-        "contact": "Contact Us",
-        "privacy_policy": "Privacy Policy",
-        "terms_of_service": "Terms of Service",
-        "follow_us": "Follow Us",
-        "copyright": "© {{year}} {{name}}",
-        "rights": "All rights reserved."
-    }
+    "brand": "FundSink",
+    "description": "The smart way to manage your sinking funds across traditional and cryptocurrency assets.",
+    "services": {
+        "title": "Services",
+        "wallet": "Wallet",
+        "crypto": "Crypto",
+        "insurance": "Insurance",
+        "investment": "Investment"
+    },
+    "resources": {
+        "title": "Resources",
+        "helpCenter": "Help Center",
+        "guides": "Guides",
+        "community": "Community",
+        "webinars": "Webinars"
+    },
+    "company": {
+        "title": "Company",
+        "stories": "Stories",
+        "careers": "Careers",
+        "contact": "Contact",
+        "partners": "Partners"
+    },
+    "rightsReserved": "All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
+    "appGallery": "Explore it on App Gallery"
 }

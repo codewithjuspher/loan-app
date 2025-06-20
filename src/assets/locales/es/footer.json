@@ -1,11 +1,32 @@
 {
-    "footer": {
-        "about_us": "Sobre Nosotros",
-        "contact": "Contáctanos",
-        "privacy_policy": "Política de Privacidad",
-        "terms_of_service": "Términos del Servicio",
-        "follow_us": "Síguenos",
-        "copyright": "© {{year}} {{name}}",
-        "rights": "Todos los derechos reservados."
-    }
+    "brand": "FundSink",
+    "description": "La forma inteligente de gestionar tus fondos de reserva en activos tradicionales y criptográficos.",
+    "services": {
+        "title": "Servicios",
+        "wallet": "Billetera",
+        "crypto": "Cripto",
+        "insurance": "Seguro",
+        "investment": "Inversión"
+    },
+    "resources": {
+        "title": "Recursos",
+        "helpCenter": "Centro de ayuda",
+        "guides": "Guías",
+        "community": "Comunidad",
+        "webinars": "Webinars"
+    },
+    "company": {
+        "title": "Compañía",
+        "stories": "Historias",
+        "careers": "Carreras",
+        "contact": "Contacto",
+        "partners": "Socios"
+    },
+    "rightsReserved": "Todos los derechos reservados.",
+    "terms": "Términos del servicio",
+    "privacy": "Política de privacidad",
+    "cookie": "Política de cookies",
+    "appStore": "Descargar en la App Store",
+    "googlePlay": "Disponible en Google Play",
+    "appGallery": "Explórelo en App Gallery"
 }

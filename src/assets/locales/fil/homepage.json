@@ -1,9 +1,10 @@
 {
     "hero": {
-        "title": "Sumali sa Sinking Fund at Siguraduhin ang Iyong Kinabukasan",
-        "subtitle": "Mag-ambag, mag-manage, at palaguin ang ipon ng inyong komunidad - lahat sa isang app.",
-        "cta": "Magsimula",
-        "cryptoNote": "Ngayon may paparating na suporta para sa mga transaksyong gamit ang cryptocurrency, kabilang ang Bitcoin, Ethereum, Binance, at Solana."
+        "title": "Smart Sinking Fund Management para sa Tradisyonal at Crypto Assets",
+        "subtitle": "Planuhin ang mga gastusin sa hinaharap sa pamamagitan ng regular na pag-iimpok. Tinutulungan ka ng aming platform na pamahalaan ang mga sinking fund sa fiat at crypto.",
+        "cta": "Magsimulang Mag-impok",
+        "cryptoNote": "May paparating na suporta para sa mga transaksyong gamit ang Bitcoin, Ethereum, Binance, at Solana.",
+        "learn_more": "Alamin Pa"
     },
     "how": {
         "title": "Paano Ito Gumagana",
@@ -28,22 +29,26 @@
         ]
     },
     "features": {
-        "title": "Pangunahing Tampok Para sa Iyong Pagsulong",
-        "description": "Mga kasangkapan para sa pagiging bukas at paglago ng pananalapi.",
-        "record": "Irehistro ang Transaksyon",
-        "record_desc": "Madaling subaybayan ang bawat ambag, pag-withdraw, o gastos.",
-        "contribute": "Mag-ambag Regularly",
-        "contribute_desc": "I-automate o pamahalaan ang iyong mga ambag para sa sama-samang pag-unlad.",
+        "title": "Makapangyarihang Mga Tampok para sa Iyong Sinking Fund",
+        "description": "Nag-aalok ang aming platform ng lahat ng kailangan mo upang lumikha, pamahalaan, at subaybayan ang iyong sinking fund para sa tradisyunal at crypto assets.",
+        "record": "I-record ang mga Transaksyon",
+        "record_desc": "Madaling subaybayan ang bawat kontribusyon, withdrawal, o gastos.",
+        "contribute": "Regular na Mag-ambag",
+        "contribute_desc": "I-automate o manu-manong pamahalaan ang iyong ambag para sa sabay-sabay na pag-unlad.",
         "invite": "Pautang at Imbitasyon",
-        "invite_desc": "Gamitin ang loan features at imbitahin ang mga pinagkakatiwalaang kaibigan.",
-        "ai": "Suporta sa Artipisyal na Intelligence",
-        "ai_desc": "Makakuha ng matalinong tulong para sa kalkulasyon, diskarte sa pag-iipon, at automation-lahat gamit ang AI.",
-        "goal_tracking": "Pagsubaybay sa Layunin",
-        "goal_tracking_desc": "Magtakda ng mga target sa pag-iipon at subaybayan ang iyong progreso sa bawat pondo.",
-        "group_management": "Pangasiwa ng Grupo",
-        "group_management_desc": "Lumikha ng mga shared fund, magtalaga ng papel, at pamahalaan ang ambagan bilang isang grupo.",
-        "crypto_support": "Suporta sa Cryptocurrency",
-        "crypto_support_desc": "Gamitin ang mga kilalang cryptocurrency gaya ng Bitcoin, Ethereum, Binance, at Solana para sa ligtas at makabagong transaksyon."
+        "invite_desc": "Gamitin ang pautang na tampok at mag-imbita ng mga pinagkakatiwalaang kaibigan.",
+        "ai": "AI Integration",
+        "ai_desc": "Kumuha ng matalinong tulong sa pagkalkula, estratehiya sa pag-iimpok, at automation gamit ang AI.",
+        "goal_tracking": "Pagsubaybay ng Layunin",
+        "goal_tracking_desc": "Magtakda ng mga layunin sa pag-iimpok at subaybayan ang progreso sa paglipas ng panahon.",
+        "group_management": "Pamamahala ng Grupo",
+        "group_management_desc": "Lumikha ng shared funds, magtalaga ng mga tungkulin, at pamahalaan ang mga ambag ng magkakasama.",
+        "crypto_support": "Crypto Integration",
+        "crypto_support_desc": "Suporta para sa Bitcoin, Ethereum, at iba pang pangunahing cryptocurrencies. Mag-imbak ng halaga sa digital assets.",
+        "multiple_currency": "Suporta sa Maraming Pera",
+        "multiple_currency_desc": "Mag-impok sa USD, EUR, GBP, JPY at iba pa. Pamahalaan ang pondo sa iba't ibang currency.",
+        "auto_saving": "Awtomatikong Pag-iimpok",
+        "auto_saving_desc": "I-set up ang regular na paglipat sa iyong sinking fund. Hindi ka na mahuhuli sa pag-ambag."
     },
     "contribution_tracker": {
         "title": "Subaybayan ang mga Ambag sa Paglipas ng Panahon",
@@ -74,8 +79,8 @@
         "leaderboard_desc": "Ang mga nangungunang nag-imbita ay may tsansang manalo ng eksklusibong premyo bawat buwan."
     },
     "cta": {
-        "title": "Handa ka na bang magsimula ng iyong pondo?",
-        "description": "Sumali sa iba pang mas mabilis at mas matalinong nakakaabot ng kanilang mga layunin sa pagtitipid.",
+        "title": "Simulan ang Pagtatayo ng Iyong Sinking Fund Ngayon",
+        "description": "Sumali sa libu-libong gumagamit na nagse-secure ng kanilang kinabukasan sa pamamagitan ng aming matalinong sinking fund platform. Kung nag-iipon ka man para sa bakasyon, pagkukumpuni ng bahay, o bagong gadget, nandito kami para sa’yo.",
         "button": "Gumawa ng Iyong Pondo"
     },
     "faq": {
@@ -92,20 +97,42 @@
         "q5": "Maaari ba akong magtakda ng layunin para sa bawat pondo?",
         "a5": "Oo naman. Maaari kang magtakda ng target na halaga, deadline, at makita ang iyong progreso sa real-time.",
         "q6": "Paano ko mawi-withdraw ang aking ipon?",
-        "a6": "Ang pagwi-withdraw ay batay sa iyong bahagi o uri ng kahilingan. Maaaring kailanganin ng ilang request ang pag-apruba ng admin o paghihintay ng maturity ng pondo."
+        "a6": "Ang pagwi-withdraw ay batay sa iyong bahagi o uri ng kahilingan. Maaaring kailanganin ng ilang request ang pag-apruba ng admin o paghihintay ng maturity ng pondo.",
+        "q7": "Paano ninyo pinapanatiling ligtas ang aking mga transaksyon?",
+        "a7": "Ginagamit namin ang blockchain technology para siguraduhin ang seguridad ng iyong mga transaksyon. Para itong digital na kahon na may kandado—transparent, hindi basta mababago, at pinagkakatiwalaan.",
+        "q8": "Anong mga seguridad ang nagpoprotekta sa aking pondo?",
+        "a8": "Ang iyong pondo ay pinoprotektahan gamit ang encryption na pang-industriya, transparency ng blockchain, at access control—tanging ikaw at awtorisadong users lang ang may access."
     },
     "footer_cta": {
-        "title": "Handa ka na bang magsimula ng iyong sinking fund?",
-        "button": "Simulan Na"
+        "title": "Handa ka na bang magsimula ng sinking fund mo?",
+        "description": "Sumali sa libu-libong user na nagsisiguro ng kanilang pinansyal na kinabukasan gamit ang aming matalinong sinking fund platform. Para man ito sa bakasyon, pag-aayos ng bahay, o bagong tech gadget — sagot ka namin.",
+        "primary": "Gumawa ng Account",
+        "button": "Magsimula"
     },
     "testimonials": {
         "title": "Sabi ng Aming mga Gumagamit",
         "subtitle": "Tunay na feedback mula sa mga user na abot-kamay na ang kanilang mga layunin sa pananalapi.",
         "alice": "Sa tulong ng app na ito, madali akong nakapag-ipon para sa aming bahay!",
         "bob": "Mahusay na kasangkapan para pamahalaan ang mga layunin sa pananalapi at subaybayan ang progreso.",
-        "cynthia": "Napaka-intuwitibo ng interface at ang mga paalala ay tumutulong para manatiling nasa tamang landas."
+        "cynthia": "Napaka-intuwitibo ng interface at ang mga paalala ay tumutulong para manatiling nasa tamang landas.",
+        "dan": "Sa wakas, isang app na madaling gamitin para sa aming savings circle. Hindi na kailangan ng Excel!",
+        "ella": "Gustung-gusto ko kung gaano kadaling mag-imbita ng mga kaibigan at bumuo ng group fund!"
     },
     "parallax": {
         "title": "Maranasan ang Kalinawan sa Pananalapi"
+    },
+    "stats": {
+        "active_users": "Aktibong Mga Gamit",
+        "total_savings": "Kabuuang Ipon",
+        "supported_currencies": "Sinusuportahang Pera"
+    },
+    "market": {
+        "title": "Live na Pamilihan ng Cryptocurrency",
+        "description": "Tingnan ang real-time na presyo, volume, at 24h trend ng mga nangungunang cryptocurrency.",
+        "reload": "Mag-retry muli",
+        "errors": {
+            "title": "Hindi maipakita ang impormasyon ng merkado ng cryptocurrency.",
+            "subtitle": "Masyadong maraming mga kahilingan. Mangyaring subukang muli mamaya."
+        }
     }
 }

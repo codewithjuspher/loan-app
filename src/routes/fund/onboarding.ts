@@ -1,6 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 import React from "react";
 import { logout } from "../../lib/auth/logout";
+import { authGuard } from "../../lib/guards/authGuard";
+import { getUser } from "../../lib/api/user";
 
 function FundOnboardingPage() {
   return React.createElement(
@@ -103,5 +105,16 @@ function FundOnboardingPage() {
 }
 
 export const Route = createFileRoute("/fund/onboarding")({
+  loader: async ({ location }) => {
+    authGuard(location.pathname);
+
+    const user = await getUser();
+
+    if (user.fund && user.wallet) {
+      throw redirect({ to: "/user/dashboard" });
+    }
+
+    return null;
+  },
   component: FundOnboardingPage,
 });

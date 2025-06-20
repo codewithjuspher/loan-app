@@ -3,14 +3,16 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useTranslation } from "react-i18next"
 import { Button, Typography } from "antd"
+import { useUIStore } from "../../../stores/uiStore"
 
-const { Title } = Typography
+const { Title, Paragraph } = Typography
 
 gsap.registerPlugin(ScrollTrigger)
 
 export const FooterCTA: React.FC = () => {
     const ctaRef = useRef<HTMLDivElement>(null)
     const { t } = useTranslation("homepage")
+    const { darkMode } = useUIStore()
 
     useEffect(() => {
         if (!ctaRef.current) return
@@ -31,22 +33,30 @@ export const FooterCTA: React.FC = () => {
         )
     }, [])
 
+    const bgClass = darkMode
+        ? "bg-gradient-to-r from-sky-700 to-sky-500 text-white"
+        : "bg-gradient-to-r from-indigo-600 to-purple-600 text-white"
+
     return (
-        <section ref={ctaRef} className="bg-sky-600 dark:bg-sky-500 text-white py-8 px-6">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-                <Title
-                    level={3}
-                    className="!text-white !text-center md:!text-left !mb-0"
-                >
-                    {t("footer_cta.title", "Ready to start your sinking fund?")}
-                </Title>
-                <Button
-                    type="default"
-                    href="/get-started"
-                    className="!bg-white !text-sky-600 !font-semibold !py-2 !px-6 !rounded-lg !shadow hover:!bg-gray-100 transition"
-                >
-                    {t("footer_cta.button", "Get Started")}
-                </Button>
+        <section ref={ctaRef} className={`py-20 ${bgClass}`}>
+            <div className="container mx-auto px-4">
+                <div className="max-w-4xl mx-auto text-center">
+                    <Title level={2} className="!text-white !mb-6">
+                        {t("footer_cta.title", "Start Building Your Sinking Fund Today")}
+                    </Title>
+                    <Paragraph className="text-xl mb-8 opacity-90">
+                        {t("footer_cta.description", "Join thousands of users who are securing their financial future with our smart sinking fund platform. Whether you're saving for a vacation, home renovation, or new tech gadget, we've got you covered.")}
+                    </Paragraph>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Button
+                            type="default"
+                            href="/auth/register"
+                            className="!bg-transparent !border-white !text-white hover:!bg-indigo-700 px-8 py-4 rounded-lg shadow-lg font-medium text-lg transition-all cursor-pointer whitespace-nowrap !rounded-button"
+                        >
+                            {t("footer_cta.primary", "Create Your Account")}
+                        </Button>
+                    </div>
+                </div>
             </div>
         </section>
     )

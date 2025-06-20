@@ -9,7 +9,8 @@ import {
     LockOutlined,
     RobotOutlined,
     FlagOutlined,
-    CreditCardOutlined
+    CreditCardOutlined,
+    SafetyCertificateOutlined
 } from "@ant-design/icons";
 
 export const FAQSection: React.FC = () => {
@@ -167,7 +168,54 @@ export const FAQSection: React.FC = () => {
                 </motion.div>
             ),
         },
-
+        {
+            key: "7",
+            label: (
+                <span style={{ color: token.colorText }}>
+                    <LockOutlined style={iconStyle} />
+                    {t("faq.q7", "How do you keep my transactions safe?")}
+                </span>
+            ),
+            children: (
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: 0.5 }}
+                    viewport={{ once: true }}
+                >
+                    <p style={{ color: token.colorTextSecondary }}>
+                        {t(
+                            "faq.a7",
+                            "We use blockchain technology to secure your transactions. It's like a digital lockbox—transparent, tamper-resistant, and built for trust."
+                        )}
+                    </p>
+                </motion.div>
+            ),
+        },
+        {
+            key: "8",
+            label: (
+                <span style={{ color: token.colorText }}>
+                    <SafetyCertificateOutlined style={iconStyle} />
+                    {t("faq.q8", "What security measures protect my funds?")}
+                </span>
+            ),
+            children: (
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: 0.5 }}
+                    viewport={{ once: true }}
+                >
+                    <p style={{ color: token.colorTextSecondary }}>
+                        {t(
+                            "faq.a8",
+                            "Your funds are protected using industry-standard encryption, blockchain transparency, and access controls—ensuring only you and authorized users can access them."
+                        )}
+                    </p>
+                </motion.div>
+            ),
+        },
     ];
 
     return (

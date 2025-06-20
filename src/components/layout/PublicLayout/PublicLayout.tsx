@@ -1,15 +1,18 @@
-import React from "react"
-import { Layout } from "antd"
-import { AppHeader } from "../AppHeader"
-import { AppFooter } from "../AppFooter"
+import React from "react";
+import { Layout } from "antd";
+import { AppHeader } from "../AppHeader";
+import { AppFooter } from "../AppFooter";
+import { useTawkScript } from "../../../lib/integrations/useTawkScript";
 
-const { Content } = Layout
+const { Content } = Layout;
 
 type Props = {
-    children: React.ReactNode
-}
+    children: React.ReactNode;
+};
 
 export const PublicLayout: React.FC<Props> = ({ children }) => {
+    useTawkScript();
+
     return (
         <Layout style={{ minHeight: "100vh" }}>
             <AppHeader />
@@ -18,5 +21,5 @@ export const PublicLayout: React.FC<Props> = ({ children }) => {
             </Content>
             <AppFooter />
         </Layout>
-    )
-}
+    );
+};

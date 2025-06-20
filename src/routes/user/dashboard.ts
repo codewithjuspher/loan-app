@@ -2,6 +2,7 @@ import { createFileRoute, redirect } from "@tanstack/react-router";
 import React from "react";
 import { authGuard } from "../../lib/guards/authGuard";
 import { logout } from "../../lib/auth/logout";
+import { getUser } from "../../lib/api/user";
 
 function DashboardPage() {
   return React.createElement(
@@ -64,13 +65,11 @@ function DashboardPage() {
   );
 }
 
-
 export const Route = createFileRoute("/user/dashboard")({
   loader: async ({ location }) => {
     authGuard(location.pathname);
 
-    const res = await fetch("/me");
-    const user = (await res.json()) as { fund?: unknown; wallet?: unknown };
+    const user = await getUser();
 
     if (!user.fund && !user.wallet) {
       throw redirect({ to: "/fund/onboarding" });

@@ -1,136 +1,107 @@
-import React, { useEffect, useState } from "react"
-import { useTranslation } from "react-i18next"
-import {
-    Layout,
-    Menu,
-    Switch,
-    Select,
-    Drawer,
-    Grid,
-    Space,
-    theme
-} from "antd"
-import {
-    MenuOutlined,
-    LoginOutlined,
-    GlobalOutlined,
-} from "@ant-design/icons"
-import { Link, useRouterState } from "@tanstack/react-router"
-import { useUIStore } from "../../../stores/uiStore"
-import i18n from "../../../common/i18n"
-import { SmartButton } from "../../ui/Button/Button"
-import logo from "../../../assets/images/logo-transparent.png";
-import { useRouter } from "@tanstack/react-router";
-import { shallow } from "zustand/shallow";
-import { FlickeringBulb } from "./FlickeringBulb"
+import React, { useEffect, useState } from "react";
+import { MenuOutlined, DownOutlined } from "@ant-design/icons";
+import { Link } from "@tanstack/react-router";
+import { Drawer, Layout, theme, Typography, Dropdown } from "antd";
+import { motion, AnimatePresence } from "framer-motion";
 
-const { Header } = Layout
-const { useBreakpoint } = Grid
+import { HeaderControls } from "./Controls/HeaderControls";
+import { LoginButton } from "./Controls/LoginButton";
+import { useAppHeaderLogic } from "./useAppHeaderLogic";
+import { useUIStore } from "../../../stores/uiStore";
+
+const { Header } = Layout;
+const { Title } = Typography;
+
+const AnimatedDropdownMenu: React.FC<{
+    items: { key: string; label: React.ReactNode }[];
+    columns?: number;
+    darkMode: boolean;
+}> = ({ items, columns = 2, darkMode }) => {
+    return (
+        <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 8 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className={`
+                    ${darkMode ? "bg-slate-800" : "bg-white"}
+                    shadow-lg rounded-xl py-4 px-6
+                    grid gap-4
+                    ${columns === 2 ? "grid-cols-2" : `grid-cols-${columns}`}
+                    min-w-[280px]`}
+            >
+                {items.map((item) => (
+                    <a
+                        key={item.key}
+                        href="#"
+                        className={`text-sm transition hover:text-blue-600 ${darkMode ? "text-gray-200" : "text-gray-800"}`}
+                    >
+                        {item.label}
+                    </a>
+                ))}
+            </motion.div>
+        </AnimatePresence>
+    );
+};
+
+const renderDropdown = (
+    label: string,
+    items: { key: string; label: React.ReactNode }[],
+    darkMode: boolean,
+    columns?: number
+) => (
+    <Dropdown
+        popupRender={() => (
+            <AnimatedDropdownMenu items={items} columns={columns} darkMode={darkMode} />
+        )}
+        trigger={["hover"]}
+        placement="bottom"
+        arrow
+    >
+        <span className="cursor-pointer px-4 py-2 hover:text-blue-600 transition duration-300 ease-in-out flex items-center gap-1">
+            {label} <DownOutlined style={{ fontSize: 10 }} />
+        </span>
+    </Dropdown>
+
+);
 
 export const AppHeader: React.FC = () => {
-    const { autoDarkMode, setAutoDarkMode, darkMode, language, setLanguage } = useUIStore(
-        (state) => ({
-            autoDarkMode: state.autoDarkMode,
-            setAutoDarkMode: state.setAutoDarkMode,
-            darkMode: state.darkMode,
-            language: state.language,
-            setLanguage: state.setLanguage,
-        }),
-        shallow
-    );
-    const { location } = useRouterState()
-    const { navigate } = useRouter();
-    const [drawerVisible, setDrawerVisible] = useState(false)
-    const screens = useBreakpoint()
-    const isMobile = !screens.md
-    const { token } = theme.useToken()
-    const { t } = useTranslation("header")
-
-    const supportedLanguages = ["en", "fil", "es", "ja"] as const;
-    type Language = (typeof supportedLanguages)[number];
-
-    const handleLanguageChange = (value: string) => {
-        if (supportedLanguages.includes(value as Language)) {
-            const lang = value as Language;
-            setLanguage(lang);
-            i18n.changeLanguage(lang);
-        }
-    }
-
-    const handleLogin = () => {
-        navigate({ to: "/auth/login" });
-    }
+    const { location, isMobile, t } = useAppHeaderLogic();
+    const { darkMode } = useUIStore();
 
     useEffect(() => {
-        document.body.setAttribute("data-theme", darkMode ? "dark" : "light")
-    }, [darkMode])
+        document.body.setAttribute("data-theme", darkMode ? "dark" : "light");
+    }, [darkMode]);
 
-    const menuItems = [
-        { key: "/home", label: <Link to="/home">{t("navigation.home")}</Link> },
-        { key: "/about", label: <Link to="/about">{t("navigation.about")}</Link> },
-        { key: "/contact", label: <Link to="/contact">{t("navigation.contact")}</Link> },
-    ]
+    const { token } = theme.useToken();
+    const [drawerVisible, setDrawerVisible] = useState(false);
 
-    const isLoginPage = location.pathname.startsWith("/auth/login");
+    const userGuideItems = [
+        { key: "overview", label: t("header.user_guide.overview", "Overview") },
+        { key: "setup", label: t("header.user_guide.setup", "Setup") },
+        { key: "faq", label: t("header.user_guide.faq", "FAQ") },
+        { key: "security", label: t("header.user_guide.security", "Security") },
+        { key: "privacy", label: t("header.user_guide.privacy", "Privacy") },
+        { key: "billing", label: t("header.user_guide.billing", "Billing") },
+        { key: "loans", label: t("header.user_guide.loans", "Loans") },
+        { key: "payments", label: t("header.user_guide.payments", "Payments") },
+        { key: "funds", label: t("header.user_guide.funds", "Funds") },
+        { key: "transactions", label: t("header.user_guide.transactions", "Transactions") },
+        { key: "rewards", label: t("header.user_guide.rewards", "Rewards") },
+        { key: "withdrawal", label: t("header.user_guide.withdrawal", "Withdrawal") },
+    ];
 
-    const renderLoginButton = (
-        <div style={{ marginTop: isMobile ? 24 : 0, textAlign: "center" }}>
-            <SmartButton
-                mode="submit"
-                type={isLoginPage ? "primary" : "default"}
-                onClick={handleLogin}
-                icon={<LoginOutlined />}
-                label={t("actions.login")}
-            />
-        </div>
-    );
+    const servicesItems = [
+        { key: "wallet", label: t("header.services.wallet", "Wallet") },
+        { key: "crypto", label: t("header.services.crypto", "Crypto") },
+        { key: "insurance", label: t("header.services.insurance", "Insurance") },
+        { key: "investments", label: t("header.services.investments", "Investments") },
+    ];
 
-    const renderControls = (
-        <Space
-            size="middle"
-            align="center"
-            style={{
-                marginTop: isMobile ? 24 : 0,
-                width: isMobile ? "100%" : "auto",
-                justifyContent: isMobile ? "space-around" : "flex-start",
-                display: "flex",
-            }}
-        >
-            <Space>
-                <FlickeringBulb />
-                <Switch
-                    checked={autoDarkMode}
-                    onChange={setAutoDarkMode}
-                    checkedChildren={t("theme.auto")}
-                    unCheckedChildren={t("theme.manual")}
-                />
-                {!autoDarkMode && (
-                    <Switch
-                        checked={darkMode}
-                        onChange={(value) => useUIStore.getState().setDarkMode(value)}
-                        checkedChildren="🌙"
-                        unCheckedChildren="☀️"
-                    />
-                )}
-            </Space>
-
-            <Space>
-                <GlobalOutlined />
-                <Select
-                    value={language}
-                    onChange={handleLanguageChange}
-                    style={{ width: 100 }}
-                    size="small"
-                    variant="borderless"
-                >
-                    <Select.Option value="en">English</Select.Option>
-                    <Select.Option value="fil">Filipino</Select.Option>
-                    <Select.Option value="es">Español</Select.Option>
-                    <Select.Option value="ja">日本語</Select.Option>
-                </Select>
-            </Space>
-        </Space>
-    );
+    const navLinkClass = (path: string) =>
+        `flex items-center gap-1 px-4 py-2 transition ${location.pathname === path ? "text-blue-600 font-medium" : darkMode ? "text-gray-200" : "text-gray-800"
+        } hover:text-blue-600`;
 
     return (
         <Header
@@ -147,12 +118,13 @@ export const AppHeader: React.FC = () => {
                 top: 0,
             }}
         >
-            <Link to="/home">
-                <img
-                    src={logo}
-                    alt="Sinking Fund Logo"
-                    style={{ height: 90, objectFit: "contain" }}
-                />
+            <Link to="/home" className="inline-block">
+                <Title
+                    level={3}
+                    className="!m-0 text-blue-600 dark:text-blue-400 font-semibold tracking-tight"
+                >
+                    SinkFund.io
+                </Title>
             </Link>
 
             {isMobile ? (
@@ -170,35 +142,30 @@ export const AppHeader: React.FC = () => {
                         open={drawerVisible}
                         styles={{ body: { background: token.colorBgContainer } }}
                     >
-                        <Menu
-                            mode="vertical"
-                            selectedKeys={[location.pathname]}
-                            items={menuItems}
-                            onClick={() => setDrawerVisible(false)}
-                        />
-                        {renderControls}
-                        {renderLoginButton}
+                        <div className="flex flex-col gap-4">
+                            <Link to="/home" className={navLinkClass("/home")}>{t("navigation.home", "Home")}</Link>
+                            {renderDropdown(t("navigation.user_guide", "User Guide"), userGuideItems, darkMode, 2)}
+                            {renderDropdown(t("navigation.services", "Services"), servicesItems, darkMode, 2)}
+                            <a href="#" className={navLinkClass("/careers")}>{t("navigation.careers", "Careers")}</a>
+                            <a href="#" className={navLinkClass("/stories")}>{t("navigation.stories", "Stories")}</a>
+                            <Link to="/contact" className={navLinkClass("/contact")}>{t("navigation.contact", "Contact")}</Link>
+                            <HeaderControls isMobile />
+                            <LoginButton isMobile />
+                        </div>
                     </Drawer>
                 </>
             ) : (
-                <>
-                    <Menu
-                        mode="horizontal"
-                        selectedKeys={[location.pathname]}
-                        items={menuItems}
-                        style={{
-                            flex: 1,
-                            justifyContent: "center",
-                            display: "flex",
-                            borderBottom: "none",
-                            background: token.colorBgContainer,
-                        }}
-                    />
-                    {renderControls}
-                    {renderLoginButton}
-                </>
+                <div className="flex items-center gap-6">
+                    <Link to="/home" className={navLinkClass("/home")}>{t("navigation.home", "Home")}</Link>
+                    {renderDropdown(t("navigation.user_guide", "User Guide"), userGuideItems, darkMode, 2)}
+                    {renderDropdown(t("navigation.services", "Services"), servicesItems, darkMode, 2)}
+                    <a href="#" className={navLinkClass("/careers")}>{t("navigation.careers", "Careers")}</a>
+                    <a href="#" className={navLinkClass("/stories")}>{t("navigation.stories", "Stories")}</a>
+                    <Link to="/contact" className={navLinkClass("/contact")}>{t("navigation.contact", "Contact")}</Link>
+                    <HeaderControls isMobile={false} />
+                    <LoginButton isMobile={false} />
+                </div>
             )}
-
         </Header>
-    )
-}
+    );
+};

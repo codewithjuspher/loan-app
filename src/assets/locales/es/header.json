@@ -3,7 +3,11 @@
         "home": "Inicio",
         "about": "Sobre Nosotros",
         "contact": "Contáctanos",
-        "menu": "Navegación"
+        "menu": "Navegación",
+        "user_guide": "Guía del Usuario",
+        "services": "Servicios",
+        "careers": "Carreras",
+        "stories": "Historias"
     },
     "actions": {
         "login": "Iniciar Sesión",
@@ -17,5 +21,27 @@
     "theme": {
         "auto": "Tema Automático",
         "manual": "Tema Manual"
+    },
+    "header": {
+        "user_guide": {
+            "overview": "Resumen",
+            "setup": "Configuración",
+            "faq": "Preguntas frecuentes",
+            "security": "Seguridad",
+            "privacy": "Privacidad",
+            "billing": "Facturación",
+            "loans": "Préstamos",
+            "payments": "Pagos",
+            "funds": "Fondos",
+            "transactions": "Transacciones",
+            "rewards": "Recompensas",
+            "withdrawal": "Retiro"
+        },
+        "services": {
+            "wallet": "Billetera",
+            "crypto": "Cripto",
+            "insurance": "Seguro",
+            "investments": "Inversiones"
+        }
     }
 }

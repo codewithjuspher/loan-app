@@ -1,6 +1,6 @@
 import React from "react"
 import { motion, Variants } from "framer-motion"
-import { Card, theme } from "antd"
+import { Card, Typography } from "antd"
 import {
     DollarOutlined,
     FileTextOutlined,
@@ -8,9 +8,14 @@ import {
     RobotOutlined,
     LineChartOutlined,
     SolutionOutlined,
-    TransactionOutlined
+    TransactionOutlined,
+    ClockCircleOutlined,
+    BankOutlined
 } from "@ant-design/icons"
 import { useTranslation } from "react-i18next"
+import { useUIStore } from "../../../stores/uiStore"
+
+const { Title, Paragraph } = Typography
 
 const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
@@ -26,12 +31,17 @@ const cardVariants: Variants = {
 }
 
 export const FeaturesSection: React.FC = () => {
-    const { token } = theme.useToken()
     const { t } = useTranslation("homepage")
+    const { darkMode } = useUIStore()
 
-    const isDark = token.colorBgBase === "#141414" || token.colorBgBase?.includes("rgb(0");
+    const isDark = darkMode
 
     const features = [
+        {
+            icon: <BankOutlined className="text-3xl text-emerald-600" />,
+            title: t("features.multiple_currency", "Multiple Currency Support") as string,
+            description: t("features.multiple_currency_desc", "Save in USD, EUR, GBP, JPY and more. Seamlessly manage funds across different currencies.") as string
+        },
         {
             icon: <FileTextOutlined className="text-3xl text-blue-500" />,
             title: t("features.record", "Record Transactions") as string,
@@ -49,7 +59,7 @@ export const FeaturesSection: React.FC = () => {
         },
         {
             icon: <RobotOutlined className="text-3xl text-cyan-500" />,
-            title: t("features.ai", "AI Support") as string,
+            title: t("features.ai", "AI Intergration") as string,
             description: t("features.ai_desc", "Get smart assistance for calculations, savings strategies, and automation—all powered by AI.") as string
         },
         {
@@ -64,8 +74,13 @@ export const FeaturesSection: React.FC = () => {
         },
         {
             icon: <TransactionOutlined className="text-3xl text-yellow-500" />,
-            title: t("features.crypto_support", "Cryptocurrency Support") as string,
-            description: t("features.crypto_support_desc", "Use popular cryptocurrencies like Bitcoin, Ethereum, Binance, and Solana for secure and modern transactions.") as string
+            title: t("features.crypto_support", "Crypto Integration") as string,
+            description: t("features.crypto_support_desc", "Support for Bitcoin, Ethereum, and other major cryptocurrencies. Store value in digital assets.") as string
+        },
+        {
+            icon: <ClockCircleOutlined className="text-3xl text-indigo-500" />,
+            title: t("features.auto_saving", "Automated Savings") as string,
+            description: t("features.auto_saving_desc", "Set up recurring transfers to your sinking funds. Never miss a contribution with automation.") as string
         }
     ];
 
@@ -73,17 +88,19 @@ export const FeaturesSection: React.FC = () => {
         <section
             className="py-20 px-4 transition-colors duration-700"
             style={{
-                backgroundColor: token.colorBgBase,
-                color: token.colorText
+                background: isDark
+                    ? "linear-gradient(to bottom right, #1e293b, #0f172a)"
+                    : "linear-gradient(to bottom right, #ffffff, #e0f2fe)",
+                color: isDark ? "#ffffff" : "#1e293b"
             }}
         >
             <div className="max-w-6xl mx-auto text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold">
-                    {t("features.title", "Core Features to Help You Grow")}
-                </h2>
-                <p className="mt-2" style={{ color: token.colorTextSecondary }}>
-                    {t("features.description", "Tools designed to build transparency and financial growth.")}
-                </p>
+                <Title level={2} style={{ color: isDark ? "#ffffff" : "#1e293b" }}>
+                    {t("features.title", "Powerful Features for Your Sinking Fund")}
+                </Title>
+                <Paragraph style={{ color: isDark ? "#cbd5e1" : "#475569" }}>
+                    {t("features.description", "Our platform offers everything you need to create, manage, and track your sinking funds for both traditional and cryptocurrency assets.")}
+                </Paragraph>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
@@ -109,10 +126,10 @@ export const FeaturesSection: React.FC = () => {
                         >
                             <div className="flex flex-col items-center text-center">
                                 <div className="mb-4">{feature.icon}</div>
-                                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                                <p className="mt-2" style={{ color: token.colorTextSecondary }}>
+                                <Title level={4} style={{ color: isDark ? "#ffffff" : "#1e293b" }}>{feature.title}</Title>
+                                <Paragraph style={{ color: isDark ? "#cbd5e1" : "#475569" }}>
                                     {feature.description}
-                                </p>
+                                </Paragraph>
                             </div>
                         </Card>
                     </motion.div>

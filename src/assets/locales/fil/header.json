@@ -3,7 +3,11 @@
         "home": "Bahay",
         "about": "Tungkol sa Amin",
         "contact": "Makipag-ugnayan sa Amin",
-        "menu": "Pag-navigate"
+        "menu": "Pag-navigate",
+        "user_guide": "Gabay ng Gumagamit",
+        "services": "Mga Serbisyo",
+        "careers": "Mga Trabaho",
+        "stories": "Mga Kuwento"
     },
     "actions": {
         "login": "Mag-log in",
@@ -17,5 +21,27 @@
     "theme": {
         "auto": "Awtomatik na Tema",
         "manual": "Manwal na Tema"
+    },
+    "header": {
+        "user_guide": {
+            "overview": "Pangkalahatang-ideya",
+            "setup": "Pag-setup",
+            "faq": "FAQs",
+            "security": "Seguridad",
+            "privacy": "Privacy",
+            "billing": "Pagsingil",
+            "loans": "Pautang",
+            "payments": "Bayad",
+            "funds": "Pondo",
+            "transactions": "Transaksyon",
+            "rewards": "Gantimpala",
+            "withdrawal": "Pag-withdraw"
+        },
+        "services": {
+            "wallet": "Pitaka",
+            "crypto": "Krypto",
+            "insurance": "Seguro",
+            "investments": "Pamumuhunan"
+        }
     }
 }

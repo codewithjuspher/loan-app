@@ -1,7 +1,7 @@
 import { motion, useCycle } from "framer-motion";
 import { BulbOutlined } from "@ant-design/icons";
 import { useEffect, useRef } from "react";
-import { useUIStore } from "../../../stores/uiStore";
+import { useUIStore } from "../../../../stores/uiStore";
 
 export const FlickeringBulb = () => {
     const { darkMode } = useUIStore();

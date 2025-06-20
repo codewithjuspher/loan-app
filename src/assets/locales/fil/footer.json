@@ -1,11 +1,32 @@
 {
-    "footer": {
-        "about_us": "Tungkol sa Amin",
-        "contact": "Makipag-ugnayan sa Amin",
-        "privacy_policy": "Patakaran sa Privacy",
-        "terms_of_service": "Mga Tuntunin ng Serbisyo",
-        "follow_us": "Sundan Kami",
-        "copyright": "© {{year}} {{name}}",
-        "rights": "Lahat ng karapatan ay nakalaan."
-    }
+    "brand": "FundSink",
+    "description": "Ang matalinong paraan ng pamamahala ng iyong sinking funds sa tradisyonal at crypto na assets.",
+    "services": {
+        "title": "Mga Serbisyo",
+        "wallet": "Wallet",
+        "crypto": "Crypto",
+        "insurance": "Seguro",
+        "investment": "Pamumuhunan"
+    },
+    "resources": {
+        "title": "Mga Sanggunian",
+        "helpCenter": "Help Center",
+        "guides": "Mga Gabay",
+        "community": "Komunidad",
+        "webinars": "Mga Webinar"
+    },
+    "company": {
+        "title": "Kumpanya",
+        "stories": "Mga Kuwento",
+        "careers": "Trabaho",
+        "contact": "Makipag-ugnayan",
+        "partners": "Mga Kasosyo"
+    },
+    "rightsReserved": "Lahat ng karapatan ay nakalaan.",
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "privacy": "Patakaran sa Privacy",
+    "cookie": "Patakaran sa Cookie",
+    "appStore": "I-download sa App Store",
+    "googlePlay": "Kunin sa Google Play",
+    "appGallery": "Galugarin ito sa App Gallery"
 }

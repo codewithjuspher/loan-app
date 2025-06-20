@@ -1,9 +1,10 @@
 {
     "hero": {
-        "title": "Join a Sinking Fund and Secure Your Future",
-        "subtitle": "Contribute, manage, and grow your community savings - all in one place.",
-        "cta": "Get Started",
-        "cryptoNote": "Now with upcoming support for cryptocurrency transactions, including Bitcoin, Ethereum, Binance, and Solana."
+        "title": "Smart Sinking Fund Management for Traditional & Crypto Assets",
+        "subtitle": "Plan for future expenses by setting aside money regularly. Our platform helps you manage sinking funds across traditional currencies and cryptocurrencies with ease.",
+        "cta": "Start Saving",
+        "cryptoNote": "Now with upcoming support for cryptocurrency transactions, including Bitcoin, Ethereum, Binance, and Solana.",
+        "learn_more": "Learn More"
     },
     "how": {
         "title": "How It Works",
@@ -28,22 +29,26 @@
         ]
     },
     "features": {
-        "title": "Core Features to Help You Grow",
-        "description": "Tools designed to build transparency and financial growth.",
+        "title": "Powerful Features for Your Sinking Fund",
+        "description": "Our platform offers everything you need to create, manage, and track your sinking funds for both traditional and cryptocurrency assets.",
         "record": "Record Transactions",
         "record_desc": "Easily track every contribution, withdrawal, or expense.",
         "contribute": "Contribute Regularly",
         "contribute_desc": "Automate or manage your contributions to grow together.",
         "invite": "Loan & Invite",
         "invite_desc": "Access loan features and invite trusted friends.",
-        "ai": "AI Support",
+        "ai": "AI Intergration",
         "ai_desc": "Get smart assistance for calculations, savings strategies, and automation-all powered by AI.",
         "goal_tracking": "Goal Tracking",
         "goal_tracking_desc": "Set savings targets for each fund and monitor your progress over time.",
         "group_management": "Group Management",
         "group_management_desc": "Create shared funds, assign roles, and manage contributions together.",
-        "crypto_support": "Cryptocurrency Support",
-        "crypto_support_desc": "Use popular cryptocurrencies like Bitcoin, Ethereum, Binance, and Solana for secure and modern transactions."
+        "crypto_support": "Crypto Integration",
+        "crypto_support_desc": "Support for Bitcoin, Ethereum, and other major cryptocurrencies. Store value in digital assets.",
+        "multiple_currency": "Multiple Currency Support",
+        "multiple_currency_desc": "Save in USD, EUR, GBP, JPY and more. Seamlessly manage funds across different currencies.",
+        "auto_saving": "Automated Savings",
+        "auto_saving_desc": "Set up recurring transfers to your sinking funds. Never miss a contribution with automation."
     },
     "contribution_tracker": {
         "title": "Track Contributions Over Time",
@@ -74,8 +79,8 @@
         "leaderboard_desc": "Top inviters get a chance to win exclusive prizes each month."
     },
     "cta": {
-        "title": "Ready to Start Your Fund?",
-        "description": "Join others reaching their savings goals — faster and smarter.",
+        "title": "Start Building Your Sinking Fund Today",
+        "description": "Join thousands of users who are securing their financial future with our smart sinking fund platform. Whether you're saving for a vacation, home renovation, or new tech gadget, we've got you covered.",
         "button": "Create Your Fund"
     },
     "faq": {
@@ -92,10 +97,16 @@
         "q5": "Can I set a goal for each fund?",
         "a5": "Absolutely. You can set target amounts, deadlines, and even visualize your progress with real-time updates.",
         "q6": "How do I withdraw my savings?",
-        "a6": "Withdrawals are based on your share or request type. Some may require admin approval or fund maturity before access."
+        "a6": "Withdrawals are based on your share or request type. Some may require admin approval or fund maturity before access.",
+        "q7": "How do you keep my transactions safe?",
+        "a7": "We use blockchain technology to secure your transactions. It's like a digital lockbox—transparent, tamper-resistant, and built for trust.",
+        "q8": "What security measures protect my funds",
+        "a8": "Your funds are protected using industry-standard encryption, blockchain transparency, and access controls-ensuring only you and authorized users can access them."
     },
     "footer_cta": {
         "title": "Ready to start your sinking fund?",
+        "description": "Join thousands of users who are securing their financial future with our smart sinking fund platform. Whether you're saving for a vacation, home renovation, or new tech gadget, we've got you covered.",
+        "primary": "Create Your Account",
         "button": "Get Started"
     },
     "testimonials": {
@@ -103,9 +114,25 @@
         "subtitle": "Real feedback from users reaching their financial goals.",
         "alice": "Using this sinking fund app helped me save for my house easily!",
         "bob": "Great tool for managing financial goals and tracking progress.",
-        "cynthia": "The UI is intuitive and the reminders keep me on track."
+        "cynthia": "The UI is intuitive and the reminders keep me on track.",
+        "dan": "Simple, effective, and powerful savings tracking.",
+        "ella": "Love how easy it is to invite friends and build a group fund!"
     },
     "parallax": {
         "title": "Experience Financial Clarity"
+    },
+    "stats": {
+        "active_users": "Active Users",
+        "total_savings": "Total Savings",
+        "supported_currencies": "Supported Currencies"
+    },
+    "market": {
+        "title": "Live Cryptocurrency Market",
+        "description": "View real-time price data, volume, and 24h trends of the top cryptocurrencies.",
+        "reload": "Retry Again",
+        "errors": {
+            "title": "Unable to Load Cryptocurrency Market Data",
+            "subtitle": "Too many requests. Please try again later."
+        }
     }
 }

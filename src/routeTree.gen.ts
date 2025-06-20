@@ -13,7 +13,6 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as HomeImport } from './routes/home'
 import { Route as ContactImport } from './routes/contact'
-import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 import { Route as UserDashboardImport } from './routes/user/dashboard'
 import { Route as FundOnboardingImport } from './routes/fund/onboarding'
@@ -31,11 +30,6 @@ const HomeRoute = HomeImport.update({
 
 const ContactRoute = ContactImport.update({
   path: '/contact',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const AboutRoute = AboutImport.update({
-  path: '/about',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -83,13 +77,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
     '/contact': {
@@ -155,7 +142,6 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
-  AboutRoute,
   ContactRoute,
   HomeRoute,
   AdminDashboardRoute,
@@ -175,7 +161,6 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.ts",
       "children": [
         "/",
-        "/about",
         "/contact",
         "/home",
         "/admin/dashboard",
@@ -188,9 +173,6 @@ export const routeTree = rootRoute.addChildren({
     },
     "/": {
       "filePath": "index.ts"
-    },
-    "/about": {
-      "filePath": "about.ts"
     },
     "/contact": {
       "filePath": "contact.ts"

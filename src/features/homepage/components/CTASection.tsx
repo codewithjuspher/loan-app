@@ -41,7 +41,7 @@ export const CTASection: React.FC = () => {
                         className="text-3xl md:text-4xl font-bold mb-4"
                         style={{ color: isDark ? "#F1F5F9" : token.colorText }}
                     >
-                        {t("cta.title", "Ready to Start Your Fund?")}
+                        {t("cta.title", "Start Building Your Sinking Fund Today")}
                     </h2>
                     <p
                         className="mb-6 text-lg"
@@ -49,10 +49,10 @@ export const CTASection: React.FC = () => {
                             color: isDark ? "#CBD5E1" : token.colorTextSecondary,
                         }}
                     >
-                        {t("cta.description", "Join others reaching their savings goals — faster and smarter.")}
+                        {t("cta.description", "Join thousands of users who are securing their financial future with our smart sinking fund platform. Whether you're saving for a vacation, home renovation, or new tech gadget, we've got you covered.")}
                     </p>
                     <a
-                        href="/get-started"
+                        href="/fund/onboarding"
                         className={`inline-block font-semibold py-3 px-6 rounded-xl shadow-md transition
                             ${isDark
                                 ? "bg-white text-sky-600 hover:bg-slate-200"

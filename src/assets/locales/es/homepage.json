@@ -1,9 +1,10 @@
 {
     "hero": {
-        "title": "Únete a un Fondo de Ahorro y Asegura tu Futuro",
-        "subtitle": "Contribuye, gestiona y haz crecer tus ahorros comunitarios, todo en un solo lugar.",
-        "cta": "Comenzar",
-        "cryptoNote": "Ahora con soporte próximo para transacciones con criptomonedas, incluyendo Bitcoin, Ethereum, Binance y Solana."
+        "title": "Gestión Inteligente de Fondos de Reserva para Activos Tradicionales y Cripto",
+        "subtitle": "Planifica tus gastos futuros reservando dinero regularmente. Nuestra plataforma te ayuda a gestionar fondos tradicionales y criptomonedas con facilidad.",
+        "cta": "Comienza a Ahorrar",
+        "cryptoNote": "Con soporte próximo para transacciones con criptomonedas, incluyendo Bitcoin, Ethereum, Binance y Solana.",
+        "learn_more": "Aprende más"
     },
     "how": {
         "title": "Cómo Funciona",
@@ -28,22 +29,26 @@
         ]
     },
     "features": {
-        "title": "Funciones Clave para Impulsar tu Crecimiento",
-        "description": "Herramientas diseñadas para promover la transparencia y el crecimiento financiero.",
+        "title": "Potentes Funciones para tu Fondo de Reserva",
+        "description": "Nuestra plataforma ofrece todo lo que necesitas para crear, gestionar y rastrear tus fondos de reserva en activos tradicionales y criptomonedas.",
         "record": "Registrar Transacciones",
-        "record_desc": "Haz seguimiento fácilmente de cada aporte, retiro o gasto.",
+        "record_desc": "Haz un seguimiento fácil de cada aporte, retiro o gasto.",
         "contribute": "Contribuye Regularmente",
-        "contribute_desc": "Automatiza o gestiona tus contribuciones para crecer juntos.",
-        "invite": "Préstamos e Invitaciones",
+        "contribute_desc": "Automatiza o gestiona tus aportes para crecer juntos.",
+        "invite": "Préstamo e Invitación",
         "invite_desc": "Accede a funciones de préstamo e invita a amigos de confianza.",
-        "ai": "Soporte con IA",
-        "ai_desc": "Obtén ayuda inteligente para cálculos, estrategias de ahorro y automatización — todo impulsado por IA.",
+        "ai": "Integración con IA",
+        "ai_desc": "Obtén asistencia inteligente para cálculos, estrategias de ahorro y automatización, todo impulsado por IA.",
         "goal_tracking": "Seguimiento de Metas",
-        "goal_tracking_desc": "Establece metas de ahorro por fondo y sigue tu progreso con el tiempo.",
+        "goal_tracking_desc": "Establece objetivos de ahorro para cada fondo y monitorea tu progreso con el tiempo.",
         "group_management": "Gestión de Grupos",
-        "group_management_desc": "Crea fondos compartidos, asigna roles y gestiona aportes juntos.",
-        "crypto_support": "Soporte de Criptomonedas",
-        "crypto_support_desc": "Usa criptomonedas populares como Bitcoin, Ethereum, Binance y Solana para transacciones seguras y modernas."
+        "group_management_desc": "Crea fondos compartidos, asigna roles y gestiona las contribuciones en grupo.",
+        "crypto_support": "Integración con Cripto",
+        "crypto_support_desc": "Soporte para Bitcoin, Ethereum y otras criptomonedas. Guarda valor en activos digitales.",
+        "multiple_currency": "Soporte Multidivisa",
+        "multiple_currency_desc": "Ahorra en USD, EUR, GBP, JPY y más. Gestiona fondos en diferentes monedas sin problemas.",
+        "auto_saving": "Ahorro Automatizado",
+        "auto_saving_desc": "Configura transferencias recurrentes a tus fondos. No pierdas una sola contribución gracias a la automatización."
     },
     "contribution_tracker": {
         "title": "Sigue tus Aportes en el Tiempo",
@@ -74,9 +79,9 @@
         "leaderboard_desc": "Los principales invitadores tienen la oportunidad de ganar premios exclusivos cada mes."
     },
     "cta": {
-        "title": "¿Listo para Iniciar tu Fondo?",
-        "description": "Únete a otros que alcanzan sus metas de ahorro — más rápido e inteligentemente.",
-        "button": "Crear mi Fondo"
+        "title": "Empieza a Construir tu Fondo de Reserva Hoy",
+        "description": "Únete a miles de usuarios que están asegurando su futuro financiero con nuestra plataforma inteligente de fondos de reserva. Ya sea que estés ahorrando para unas vacaciones, una renovación del hogar o un nuevo dispositivo tecnológico, tenemos lo que necesitas.",
+        "button": "Crea tu Fondo"
     },
     "faq": {
         "title": "Preguntas Frecuentes",
@@ -92,10 +97,16 @@
         "q5": "¿Puedo establecer una meta para cada fondo?",
         "a5": "Por supuesto. Puedes establecer montos objetivos, plazos y visualizar tu progreso con actualizaciones en tiempo real.",
         "q6": "¿Cómo retiro mis ahorros?",
-        "a6": "Los retiros dependen de tu participación o tipo de solicitud. Algunos pueden requerir aprobación del administrador o maduración del fondo."
+        "a6": "Los retiros dependen de tu participación o tipo de solicitud. Algunos pueden requerir aprobación del administrador o maduración del fondo.",
+        "q7": "¿Cómo mantienen seguras mis transacciones?",
+        "a7": "Usamos tecnología blockchain para proteger tus transacciones. Es como una caja fuerte digital: transparente, resistente a manipulaciones y diseñada para generar confianza.",
+        "q8": "¿Qué medidas de seguridad protegen mis fondos?",
+        "a8": "Tus fondos están protegidos con cifrado de nivel industrial, transparencia blockchain y controles de acceso. Solo tú y los usuarios autorizados pueden acceder a ellos."
     },
     "footer_cta": {
-        "title": "¿Listo para iniciar tu fondo de ahorro?",
+        "title": "¿Listo para comenzar tu fondo de reserva?",
+        "description": "Únete a miles de usuarios que están asegurando su futuro financiero con nuestra plataforma inteligente de fondos de reserva. Ya sea que estés ahorrando para unas vacaciones, una renovación del hogar o un nuevo dispositivo tecnológico, tenemos lo que necesitas.",
+        "primary": "Crea tu cuenta",
         "button": "Comenzar"
     },
     "testimonials": {
@@ -103,9 +114,25 @@
         "subtitle": "Opiniones reales de personas alcanzando sus metas financieras.",
         "alice": "¡Esta app me ayudó a ahorrar para mi casa con facilidad!",
         "bob": "Gran herramienta para gestionar objetivos financieros y seguir el progreso.",
-        "cynthia": "La interfaz es intuitiva y los recordatorios me mantienen en camino."
+        "cynthia": "La interfaz es intuitiva y los recordatorios me mantienen en camino.",
+        "dan": "¡Por fin una app fácil de usar para nuestro círculo de ahorro! ¡Adiós a Excel!",
+        "ella": "¡Me encanta lo fácil que es invitar amigos y crear un fondo grupal!"
     },
     "parallax": {
         "title": "Experimenta Claridad Financiera"
+    },
+    "stats": {
+        "active_users": "Usuarios Activos",
+        "total_savings": "Ahorros Totales",
+        "supported_currencies": "Monedas Soportadas"
+    },
+    "market": {
+        "title": "Mercado de Criptomonedas en Vivo",
+        "description": "Consulta datos en tiempo real sobre precios, volumen y tendencias de 24 horas de las principales criptomonedas.",
+        "reload": "Reintente de Nuevo",
+        "errors": {
+            "title": "No se puede Cargar Datos del Mercado de Criptomonedasy",
+            "subtitle": "Demasiadas solicitudes. Por favor, inténtalo de nuevo más tarde."
+        }
     }
 }
